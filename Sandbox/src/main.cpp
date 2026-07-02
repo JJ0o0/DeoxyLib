@@ -12,18 +12,8 @@ class Game : public Deoxy::Application {
             auto& input = GetInput();
             auto& time = GetTime();
             
-            m_fpsAccumulatedTime += dt;
-            m_frameCount++;
-            
-            if (m_fpsAccumulatedTime >= 1.0f) {
-                m_fps = static_cast<float>(m_frameCount) / m_fpsAccumulatedTime;
-                
-                std::string title = "Deoxy Engine | FPS: " + std::to_string(static_cast<int>(m_fps));
-                window.SetWindowTitle(title);
-                
-                m_fpsAccumulatedTime = 0.0f;
-                m_frameCount = 0;
-            }
+            std::string title = "Deoxy Engine | FPS: " + std::to_string(time.GetFPSApprox());
+            window.SetWindowTitle(title);
 
             float realTime = time.Get();
             float speed = 1.5f;
@@ -42,10 +32,6 @@ class Game : public Deoxy::Application {
 
         void OnRender() override {}
         void OnQuit() override {}
-    private:
-        uint32_t m_frameCount = 0;
-        float m_fpsAccumulatedTime = 0.0f;
-        float m_fps = 0.0f;
 };
 
 int main() {

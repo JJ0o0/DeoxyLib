@@ -10,4 +10,5 @@ namespace Deoxy::Math {
     using Matrix4x4 = glm::mat4;
     
     inline float Sin(float x) { return std::sin(x); }
+    inline int Round(float x) { return std::round(x); }
 }
