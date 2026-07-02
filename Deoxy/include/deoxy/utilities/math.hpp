@@ -1,6 +1,7 @@
 #pragma once
 
 #include <glm/glm.hpp>
+#include <glm/gtc/type_ptr.hpp>
 #include <cmath>
 
 namespace Deoxy::Math {
@@ -11,4 +12,9 @@ namespace Deoxy::Math {
     
     inline float Sin(float x) { return std::sin(x); }
     inline int Round(float x) { return std::round(x); }
+
+    template<typename T>
+    inline float* GetPointer(T& vec) {
+        return &vec.x;
+    }
 }

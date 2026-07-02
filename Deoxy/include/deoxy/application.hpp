@@ -4,6 +4,7 @@
 #include "graphics/renderer.hpp"
 #include "platform/window.hpp"
 #include "input/input.hpp"
+#include "imgui/gui_handler.hpp"
 #include <memory>
 
 namespace Deoxy {
@@ -17,6 +18,7 @@ namespace Deoxy {
             virtual void OnStart() = 0;
             virtual void OnUpdate(float dt) = 0;
             virtual void OnRender() = 0;
+            virtual void OnRenderGUI() = 0;
             virtual void OnQuit() = 0;
 
             Platform::Window& GetWindow() { return *m_window; }
@@ -33,6 +35,7 @@ namespace Deoxy {
         private:
             std::unique_ptr<Platform::Window> m_window;
             std::unique_ptr<Graphics::Renderer> m_renderer;
+            std::unique_ptr<GUI> m_gui;
             Input m_input;
             Time m_time;
 

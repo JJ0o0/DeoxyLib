@@ -14,6 +14,8 @@ target_sources(Deoxy
 
         src/deoxy/input/input.cpp
 
+        src/deoxy/imgui/gui_handler.cpp
+
         ${CMAKE_SOURCE_DIR}/Vendor/glad/src/gl.c
         ${CMAKE_SOURCE_DIR}/Vendor/stb/src/stb_image.cpp
 )
@@ -30,6 +32,7 @@ target_include_directories(Deoxy
 target_link_libraries(Deoxy
     PUBLIC
         spdlog::spdlog
+        imgui
     PRIVATE
         glfw
         glm::glm

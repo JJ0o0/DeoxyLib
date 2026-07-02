@@ -1,3 +1,4 @@
+#include "imgui.h"
 #include <deoxy/application.hpp>
 #include <deoxy/logging/logger.hpp>
 #include <deoxy/logging/enginelog.hpp>
@@ -8,8 +9,12 @@ namespace Deoxy {
         DEOXY_INFO("Initializing...");
 
         m_window = std::make_unique<Platform::Window>();
+
         m_renderer = std::make_unique<Graphics::Renderer>();
         m_renderer->Init();
+
+        m_gui = std::make_unique<GUI>();
+        m_gui->Init(m_window->GetHandle());
 
         m_time.Reset();
         OnStart();
@@ -31,12 +36,18 @@ namespace Deoxy {
 
             m_renderer->Clear();
             OnRender();
+
+            m_gui->NewFrame();
+            ImGui::DockSpaceOverViewport(0, ImGui::GetMainViewport(), ImGuiDockNodeFlags_PassthruCentralNode);
+            OnRenderGUI();
+            m_gui->EndFrame();
             
             m_window->SwapBuffers();
         }
 
         DEOXY_INFO("Quitting...");
         OnQuit();
+        m_gui->Destroy();
         m_renderer->Destroy();
         m_window.reset();
 

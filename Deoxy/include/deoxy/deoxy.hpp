@@ -8,3 +8,5 @@
 #include "input/mouse_button.hpp" // IWYU pragma: export
 #include "utilities/math.hpp" // IWYU pragma: export
 #include "utilities/color.hpp" // IWYU pragma: export
+#include "imgui.h" // IWYU pragma: export
+#include "misc/cpp/imgui_stdlib.h" // IWYU pragma: export

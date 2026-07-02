@@ -4,34 +4,45 @@ class Game : public Deoxy::Application {
     protected:
         void OnStart() override {
             GetWindow().SetWindowIcon("assets/icon.png");
+            GetWindow().SetWindowTitle(m_windowTitle);
+            GetWindow().SetWindowVsync(m_vsync);
+            GetRenderer().SetClearColor(m_clearColor);
         }
 
         void OnUpdate(float dt) override {
-            auto& renderer = GetRenderer();
-            auto& window = GetWindow();
-            auto& input = GetInput();
-            auto& time = GetTime();
-            
-            std::string title = "Deoxy Engine | FPS: " + std::to_string(time.GetFPSApprox());
-            window.SetWindowTitle(title);
-
-            float realTime = time.Get();
-            float speed = 1.5f;
-            float r = Deoxy::Math::Sin(realTime * speed + 0.0f) * 0.5f + 0.5f;
-            float g = Deoxy::Math::Sin(realTime * speed + 2.0f) * 0.5f + 0.5f;
-            float b = Deoxy::Math::Sin(realTime * speed + 4.0f) * 0.5f + 0.5f;
-            renderer.SetClearColor({r, g, b, 1.0f});
-            
-            if (input.WasKeyPressed(Deoxy::KeyCode::V)) {
-                bool currentVSync = window.GetProperties().VSync;
-                window.SetWindowVsync(!currentVSync);
-            }
-
-            if (input.WasKeyPressed(Deoxy::KeyCode::Escape)) Quit();
         }
 
         void OnRender() override {}
+
+        void OnRenderGUI() override {
+            ImGui::Begin("Settings");
+
+            ImGui::Text("FPS: %d", GetTime().GetFPSApprox());
+
+            if (ImGui::InputText("Window Title", &m_windowTitle)) { 
+                GetWindow().SetWindowTitle(m_windowTitle);
+            }
+
+            if (ImGui::Checkbox("VSync", &m_vsync)) {
+                GetWindow().SetWindowVsync(m_vsync);
+            }
+
+            if(ImGui::ColorEdit4("Edit Color", Deoxy::Math::GetPointer(m_clearColor))) {
+                GetRenderer().SetClearColor(m_clearColor);
+            }
+
+            if (ImGui::Button("Quit App")) {
+                Quit();
+            }
+
+            ImGui::End();
+        }
+
         void OnQuit() override {}
+    private:
+        std::string m_windowTitle = "Deoxy Engine";
+        bool m_vsync = true;
+        Deoxy::Color m_clearColor = { 0.0f, 0.0f, 0.0f, 1.0f };
 };
 
 int main() {
