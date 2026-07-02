@@ -56,6 +56,10 @@ namespace Deoxy::Platform {
             std::abort();
         }
 
+        glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+        glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 1);
+        glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+
         m_handle = glfwCreateWindow(
             properties.Width,
             properties.Height,
@@ -68,6 +72,8 @@ namespace Deoxy::Platform {
             glfwTerminate();
             std::abort();
         }
+
+        glfwMakeContextCurrent(m_handle);
 
         glfwSetWindowUserPointer(m_handle, this);
         glfwSetFramebufferSizeCallback(m_handle, framebufferSizeCallback);

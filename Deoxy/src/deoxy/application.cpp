@@ -6,7 +6,11 @@ namespace Deoxy {
     int Application::Run() {
         Logging::Logger::Init();
         DEOXY_INFO("Initializing...");
+
         m_window = std::make_unique<Platform::Window>();
+        m_renderer = std::make_unique<Graphics::Renderer>();
+        m_renderer->Init();
+
         m_time.Reset();
         OnStart();
 
@@ -16,12 +20,16 @@ namespace Deoxy {
             m_window->PollEvents();
 
             if (m_window->WasResized()) {
+                auto& props = m_window->GetProperties();
+
+                m_renderer->OnResize(props.Width, props.Height);
                 m_window->ClearResizeFlag();
             }
 
             float dt = m_time.GetDeltaTime();
             OnUpdate(dt);
 
+            m_renderer->Clear();
             OnRender();
             
             m_window->SwapBuffers();
@@ -29,6 +37,7 @@ namespace Deoxy {
 
         DEOXY_INFO("Quitting...");
         OnQuit();
+        m_renderer->Destroy();
         m_window.reset();
 
         return 0;
