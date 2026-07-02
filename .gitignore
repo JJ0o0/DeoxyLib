@@ -1,0 +1,33 @@
+# Build
+build/
+cmake-build-*/
+
+# Cache
+.cache/
+
+# Editors
+.vscode/
+.code/
+
+# Formatting / tooling
+.clang-format
+compile_commands.json
+
+# Binaries / generated files
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
+*.pdb
+
+# CMake generated
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+Testing/
