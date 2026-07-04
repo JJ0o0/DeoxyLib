@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Utilities, Logs and Assertions - Deoxy Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Utilities, Logs and Assertions";
+        var mkdocs_page_input_path = "guides/utilities.en.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/cpp.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/c.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../index.html" class="icon icon-home"> Deoxy Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../getting-started/installation.html">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../getting-started/quick-start.html">Quick Start</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Features and Guides</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="window.html">Window System</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="input.html">Input System</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="graphics.html">Rendering and Graphics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="gui.html">UI and GUI</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Utilities, Logs and Assertions</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#math-system-deoxymath">Math System (Deoxy::Math)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#type-aliases">Type Aliases</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#helper-functions-and-direct-pointers">Helper Functions and Direct Pointers</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#file-reading-deoxyutilities">File Reading (Deoxy::Utilities)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#logging-system-logging">Logging System (Logging)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#terminal-formatting-example">Terminal Formatting Example:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#validation-with-asserts-app_assert">Validation with Asserts (APP_ASSERT)</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="/DeoxyGL/api/index.html">API Reference</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Language</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="/index.html">🇧🇷 Português Brasil</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="/en/index.html">🇺🇸 English</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Deoxy Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Features and Guides</li>
+      <li class="breadcrumb-item active">Utilities, Logs and Assertions</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="utilities-logs-assertions">Utilities, Logs &amp; Assertions<a class="headerlink" href="#utilities-logs-assertions" title="Permanent link">🛈</a></h1>
+<p>Deoxy includes a set of utility modules to handle day-to-day game development tasks, such as vector manipulation, asset file reading, log reporting, and safety validation via compile-time/runtime checks.</p>
+<hr />
+<h2 id="math-system-deoxymath">Math System (<code>Deoxy::Math</code>)<a class="headerlink" href="#math-system-deoxymath" title="Permanent link">🛈</a></h2>
+<p>To avoid reinventing the wheel, Deoxy integrates directly with the <strong>GLM</strong> (OpenGL Mathematics) library. The namespace provides direct aliases for vectors and matrices, alongside essential utility functions.</p>
+<h3 id="type-aliases">Type Aliases<a class="headerlink" href="#type-aliases" title="Permanent link">🛈</a></h3>
+<ul>
+<li><strong><code>Deoxy::Math::Vector2</code></strong> (<code>glm::vec2</code>): 2-component vector (e.g., 2D positions, sizes).</li>
+<li><strong><code>Deoxy::Math::Vector3</code></strong> (<code>glm::vec3</code>): 3-component vector (e.g., 3D positions, RGB coordinates).</li>
+<li><strong><code>Deoxy::Math::Vector4</code></strong> (<code>glm::vec4</code>): 4-component vector.</li>
+<li><strong><code>Deoxy::Math::Matrix4x4</code></strong> (<code>glm::mat4</code>): 4x4 matrix (used for camera transformations and projections).</li>
+</ul>
+<h3 id="helper-functions-and-direct-pointers">Helper Functions and Direct Pointers<a class="headerlink" href="#helper-functions-and-direct-pointers" title="Permanent link">🛈</a></h3>
+<p>When interacting with raw APIs or user interface components (like ImGui windows), you will frequently need to pass a pointer to a contiguous array of floats. The <code>GetPointer</code> function resolves this cleanly:</p>
+<pre><code class="language-cpp">Deoxy::Math::Vector3 position = {10.0f, 5.0f, 0.0f};
+
+// Interacting directly with ImGui using the vector pointer
+ImGui::SliderFloat3(&quot;Position&quot;, Deoxy::Math::GetPointer(position), -100.0f, 100.0f);
+
+// Integrated trigonometric and rounding functions:
+float sineValue = Deoxy::Math::Sin(3.14159f);
+int roundedValue = Deoxy::Math::Round(4.6f); // Returns 5
+</code></pre>
+<hr />
+<h2 id="file-reading-deoxyutilities">File Reading (<code>Deoxy::Utilities</code>)<a class="headerlink" href="#file-reading-deoxyutilities" title="Permanent link">🛈</a></h2>
+<p>To load external Shader source codes, configuration files, or data scripts, you can read the contents of a text file directly into a <code>std::string</code> with a single line of code:</p>
+<pre><code class="language-cpp">#include &lt;deoxy/utilities/file.hpp&gt;
+
+void OnStart() override {
+    // Reads the entire file. If it fails, an automatic warning is printed to the terminal.
+    std::string shaderCode = Deoxy::Utilities::ReadFileAsString(&quot;assets/shaders/base.glsl&quot;);
+}
+</code></pre>
+<hr />
+<h2 id="logging-system-logging">Logging System (<code>Logging</code>)<a class="headerlink" href="#logging-system-logging" title="Permanent link">🛈</a></h2>
+<p>Deoxy features a robust logger based on severity levels (<code>LogLevel</code>). Messages are formatted natively using the C++20 standard (<code>std::format</code>), allowing you to pass variables safely and cleanly.</p>
+<p>As the application developer, you should use the <strong>Client Macros</strong> (<code>APP_...</code>) to debug your game:</p>
+<ul>
+<li><code>APP_TRACE(...)</code>: Raw diagnostic information and execution flow.</li>
+<li><code>APP_INFO(...)</code>: General informative messages (e.g., "Systems successfully initialized").</li>
+<li><code>APP_WARN(...)</code>: Warnings of unexpected but non-fatal behavior.</li>
+<li><code>APP_ERROR(...)</code>: Errors that prevented an operation from completing successfully.</li>
+<li><code>APP_CRITICAL(...)</code>: Catastrophic errors leading up to a system crash.</li>
+</ul>
+<h3 id="terminal-formatting-example">Terminal Formatting Example:<a class="headerlink" href="#terminal-formatting-example" title="Permanent link">🛈</a></h3>
+<pre><code class="language-cpp">int health = 80;
+std::string itemName = &quot;Iron Sword&quot;;
+
+APP_INFO(&quot;The player collected the item: '{}'&quot;, itemName);
+APP_WARN(&quot;Player health is low: {} HP!&quot;, health);
+</code></pre>
+<hr />
+<h2 id="validation-with-asserts-app_assert">Validation with Asserts (<code>APP_ASSERT</code>)<a class="headerlink" href="#validation-with-asserts-app_assert" title="Permanent link">🛈</a></h2>
+<p>To aggressively catch logic bugs during the development phase, utilize the <code>APP_ASSERT</code> macro.</p>
+<p>If the passed condition evaluates to false, the system triggers a <code>CRITICAL</code> level log message detailing the exact file, line number, and custom error message, immediately aborting program execution to avoid memory corruption.</p>
+<pre><code class="language-cpp">// Verifies if the asset pointer is valid before using it
+APP_ASSERT(texturePointer != nullptr, &quot;Error: Attempted to render an unloaded texture!&quot;);
+</code></pre>
+<div class="admonition note">
+<p class="admonition-title">Performance Note (Zero-Cost)</p>
+<p>Asserts are only enabled if the <code>DEOXY_DEBUG</code> compilation macro is defined. In final distribution builds (Release), the <code>APP_ASSERT</code> macro is completely omitted by the compiler, ensuring maximum performance for the end user.</p>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="gui.html" class="btn btn-neutral float-left" title="UI and GUI"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="gui.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

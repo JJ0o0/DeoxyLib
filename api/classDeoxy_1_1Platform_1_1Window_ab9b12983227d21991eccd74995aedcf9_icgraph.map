@@ -1,0 +1,7 @@
+<map id="Deoxy::Platform::Window::SetWindowVsync" name="Deoxy::Platform::Window::SetWindowVsync">
+<area shape="rect" id="Node000001" title="Enables or disables vertical synchronization." alt="" coords="240,37,427,77"/>
+<area shape="rect" id="Node000002" href="$classDeoxy_1_1Platform_1_1Window.html#a550949b1ebf10ab580ee2a94dc78be03" title="Toggles vertical synchronization." alt="" coords="5,5,192,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,45,192,41,193,35,227,40"/>
+<area shape="rect" id="Node000003" href="$classDeoxy_1_1Platform_1_1Window.html#a49639920a07df887f745d59a7cf78b84" title="Creates a new window." alt="" coords="5,69,192,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,75,193,79,192,74,226,69"/>
+</map>

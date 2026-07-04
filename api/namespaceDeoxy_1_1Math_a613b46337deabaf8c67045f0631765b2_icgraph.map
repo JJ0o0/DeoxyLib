@@ -1,0 +1,9 @@
+<map id="Deoxy::Math::Round" name="Deoxy::Math::Round">
+<area shape="rect" id="Node000001" title="Rounds a floating&#45;point value to the nearest integer." alt="" coords="472,31,625,56"/>
+<area shape="rect" id="Node000002" href="$classDeoxy_1_1Time.html#a74fde04d5a4999d74f1c41f80dd12ccc" title="Returns the approximate frames per second." alt="" coords="217,5,424,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="458,36,424,32,425,27,459,31"/>
+<area shape="rect" id="Node000003" href="$namespaceDeoxy.html#a311d1f320e8008322f1ab5e517abeac7" title="Converts a normalized floating&#45;point color to RGBA8 format." alt="" coords="253,55,388,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="458,55,388,63,388,58,458,50"/>
+<area shape="rect" id="Node000004" href="$classDeoxy_1_1GUI.html#a364da0531e60b707dcccddf6ef08d25c" title="Draws text on the foreground draw list." alt="" coords="5,55,169,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="239,70,170,70,170,65,239,65"/>
+</map>

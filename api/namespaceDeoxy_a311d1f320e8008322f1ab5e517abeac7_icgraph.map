@@ -1,0 +1,5 @@
+<map id="Deoxy::ToColor32" name="Deoxy::ToColor32">
+<area shape="rect" id="Node000001" title="Converts a normalized floating&#45;point color to RGBA8 format." alt="" coords="217,5,352,31"/>
+<area shape="rect" id="Node000002" href="$classDeoxy_1_1GUI.html#a364da0531e60b707dcccddf6ef08d25c" title="Draws text on the foreground draw list." alt="" coords="5,5,169,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,21,170,21,170,15,203,15"/>
+</map>

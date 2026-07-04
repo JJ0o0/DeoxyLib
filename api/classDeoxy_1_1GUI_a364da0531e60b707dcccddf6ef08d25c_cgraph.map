@@ -1,0 +1,7 @@
+<map id="Deoxy::GUI::DrawText" name="Deoxy::GUI::DrawText">
+<area shape="rect" id="Node000001" title="Draws text on the foreground draw list." alt="" coords="5,5,169,31"/>
+<area shape="rect" id="Node000002" href="$namespaceDeoxy.html#a311d1f320e8008322f1ab5e517abeac7" title="Converts a normalized floating&#45;point color to RGBA8 format." alt="" coords="217,5,352,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,15,204,15,204,21,170,21"/>
+<area shape="rect" id="Node000003" href="$namespaceDeoxy_1_1Math.html#a613b46337deabaf8c67045f0631765b2" title="Rounds a floating&#45;point value to the nearest integer." alt="" coords="400,5,553,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="352,15,386,15,386,21,352,21"/>
+</map>

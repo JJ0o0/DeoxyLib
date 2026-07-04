@@ -1,0 +1,5 @@
+<map id="Deoxy::GUISettings::SetDefault" name="Deoxy::GUISettings::SetDefault">
+<area shape="rect" id="Node000001" title="Restores all GUI settings to their default values." alt="" coords="177,5,325,45"/>
+<area shape="rect" id="Node000002" href="$classDeoxy_1_1GUI.html#a224e36f6c331dd2968017f0c910f8dae" title="Initializes the GUI system." alt="" coords="5,13,129,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,28,130,28,130,23,164,23"/>
+</map>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Sistema de Input - Deoxy Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Sistema de Input";
+        var mkdocs_page_input_path = "guides/input.pt.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/cpp.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/c.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../index.html" class="icon icon-home"> Deoxy Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Começando</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../getting-started/installation.html">Instalação</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../getting-started/quick-start.html">Início Rápido</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Recursos e Guias</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="window.html">Sistema de Janela</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Sistema de Input</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#teclado">Teclado</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#exemplo-de-uso">Exemplo de Uso:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#cliques-do-mouse">Cliques do Mouse</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#exemplo-de-uso_1">Exemplo de Uso:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#posicao-deltas-e-scroll-do-mouse">Posição, Deltas e Scroll do Mouse</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#coordenadas-absolutas">Coordenadas Absolutas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#movimentacao-relativa-delta">Movimentação Relativa (Delta)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#roda-do-mouse-scroll">Roda do Mouse (Scroll)</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="graphics.html">Renderização e Gráficos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="gui.html">Interface e GUI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="utilities.html">Utilidades, Logs e Assertions</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="/DeoxyGL/api/index.html">Referencia de API</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Idioma</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="/index.html">🇧🇷 Português Brasil</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="/en/index.html">🇺🇸 English</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Deoxy Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Recursos e Guias</li>
+      <li class="breadcrumb-item active">Sistema de Input</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="sistema-de-input">Sistema de Input<a class="headerlink" href="#sistema-de-input" title="Permanent link">🛈</a></h1>
+<p>O sistema de entradas da Deoxy permite monitorar o estado do teclado e do mouse em tempo real. Ele lida tanto com estados contínuos (saber se uma tecla está sendo segurada) quanto com eventos de transição de frame (saber se um botão foi pressionado ou solto exatamente neste frame).</p>
+<hr />
+<h2 id="teclado">Teclado<a class="headerlink" href="#teclado" title="Permanent link">🛈</a></h2>
+<p>Dentro de métodos como <code>OnUpdate(float dt)</code>, você obtém a instância de input ativa chamando <code>GetInput()</code>. A partir dela, você pode passar um <code>Deoxy::KeyCode</code> para três verificações:</p>
+<ul>
+<li><strong><code>IsKeyDown(key)</code></strong>: Retorna <code>true</code> se a tecla estiver sendo <strong>mantida pressionada</strong> (ótimo para movimentação contínua).</li>
+<li><strong><code>WasKeyPressed(key)</code></strong>: Retorna <code>true</code> <strong>apenas no frame exato em que a tecla foi pressionada</strong> (útil para ações únicas, como abrir menus ou pular).</li>
+<li><strong><code>WasKeyReleased(key)</code></strong>: Retorna <code>true</code> <strong>apenas no frame exato em que a tecla foi solta</strong>.</li>
+</ul>
+<h3 id="exemplo-de-uso">Exemplo de Uso:<a class="headerlink" href="#exemplo-de-uso" title="Permanent link">🛈</a></h3>
+<pre><code class="language-cpp">void OnUpdate(float dt) override {
+    auto input = GetInput();
+
+    // Movimentação fluida enquanto segura a tecla
+    if (input.IsKeyDown(Deoxy::KeyCode::D)) jogador.MoveRight(dt);
+    if (input.IsKeyDown(Deoxy::KeyCode::A)) jogador.MoveLeft(dt);
+
+    // Ação disparada uma única vez por clique
+    if (input.WasKeyPressed(Deoxy::KeyCode::Space)) {
+        jogador.Jump();
+    }
+}
+</code></pre>
+<hr />
+<h2 id="cliques-do-mouse">Cliques do Mouse<a class="headerlink" href="#cliques-do-mouse" title="Permanent link">🛈</a></h2>
+<p>O tratamento de botões do mouse segue a mesmíssima lógica do teclado, mas utiliza a enumeração <code>Deoxy::MouseButton</code> (como <code>Left</code>, <code>Right</code>, etc.):</p>
+<ul>
+<li><strong><code>IsMouseButtonDown(button)</code></strong></li>
+<li><strong><code>WasMouseButtonPressed(button)</code></strong></li>
+<li><strong><code>WasMouseButtonReleased(button)</code></strong></li>
+</ul>
+<h3 id="exemplo-de-uso_1">Exemplo de Uso:<a class="headerlink" href="#exemplo-de-uso_1" title="Permanent link">🛈</a></h3>
+<pre><code class="language-cpp">if (input.WasMouseButtonPressed(Deoxy::MouseButton::Left)) {
+    Mundo.DispararProjetil(input.GetMouseX(), input.GetMouseY());
+}
+</code></pre>
+<hr />
+<h2 id="posicao-deltas-e-scroll-do-mouse">Posição, Deltas e Scroll do Mouse<a class="headerlink" href="#posicao-deltas-e-scroll-do-mouse" title="Permanent link">🛈</a></h2>
+<p>A Deoxy atualiza automaticamente a posição absoluta e a variação do movimento do cursor a cada frame, facilitando implementações como câmeras de jogos em primeira pessoa (FPS) ou arrastar de objetos.</p>
+<h3 id="coordenadas-absolutas">Coordenadas Absolutas<a class="headerlink" href="#coordenadas-absolutas" title="Permanent link">🛈</a></h3>
+<p>Para obter a posição do mouse em pixels em relação à área de exibição da janela:</p>
+<pre><code class="language-cpp">float mouseX = input.GetMouseX();
+float mouseY = input.GetMouseY();
+</code></pre>
+<h3 id="movimentacao-relativa-delta">Movimentação Relativa (Delta)<a class="headerlink" href="#movimentacao-relativa-delta" title="Permanent link">🛈</a></h3>
+<p>Indica quantos pixels o mouse se moveu <strong>desde o último frame</strong>. Essencial para rotação de câmeras 3D:</p>
+<pre><code class="language-cpp">float deltaX = input.GetMouseDeltaX();
+float deltaY = input.GetMouseDeltaY();
+</code></pre>
+<h3 id="roda-do-mouse-scroll">Roda do Mouse (Scroll)<a class="headerlink" href="#roda-do-mouse-scroll" title="Permanent link">🛈</a></h3>
+<p>Retorna o deslocamento da roda ou touchpad no frame atual tanto na horizontal (geralmente touchpads) quanto na vertical:</p>
+<pre><code class="language-cpp">float scrollX = input.GetScrollX();
+float scrollY = input.GetScrollY(); // O scroll padrão de rolagem de página
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="window.html" class="btn btn-neutral float-left" title="Sistema de Janela"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="graphics.html" class="btn btn-neutral float-right" title="Renderização e Gráficos">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="window.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="graphics.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

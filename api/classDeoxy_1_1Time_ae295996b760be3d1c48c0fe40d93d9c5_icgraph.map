@@ -1,0 +1,5 @@
+<map id="Deoxy::Time::GetDeltaTime" name="Deoxy::Time::GetDeltaTime">
+<area shape="rect" id="Node000001" title="Returns the delta time of the last frame." alt="" coords="231,5,433,31"/>
+<area shape="rect" id="Node000002" href="$classDeoxy_1_1Application.html#a86b7c7c16ca539e290a6bcc4043238d0" title="Starts the main application loop." alt="" coords="5,5,183,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,21,183,21,183,15,217,15"/>
+</map>

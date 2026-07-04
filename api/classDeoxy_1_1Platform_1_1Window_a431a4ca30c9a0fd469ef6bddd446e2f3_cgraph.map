@@ -1,0 +1,5 @@
+<map id="Deoxy::Platform::Window::ToggleFullscreen" name="Deoxy::Platform::Window::ToggleFullscreen">
+<area shape="rect" id="Node000001" title="Toggles between windowed and exclusive fullscreen mode." alt="" coords="5,5,192,45"/>
+<area shape="rect" id="Node000002" href="$classDeoxy_1_1Platform_1_1Window.html#aee35d1c330e83dfecbcacf0cf215803d" title="Sets the window mode." alt="" coords="240,5,427,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,23,226,23,226,28,192,28"/>
+</map>

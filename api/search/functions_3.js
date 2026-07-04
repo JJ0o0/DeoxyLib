@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['get_0',['Get',['../classDeoxy_1_1Time.html#a505404ca671ba8282306f939aff6b7d6',1,'Deoxy::Time']]],
+  ['getclearcolor_1',['getclearcolor',['../classDeoxy_1_1Graphics_1_1Renderer.html#ad11949a21807744b6ffcfa9b8d4537bb',1,'Deoxy::Graphics::Renderer::GetClearColor()'],['../classDeoxy_1_1Graphics_1_1Renderer.html#acd174bfa5a6632a33186f8c40bfd5abb',1,'Deoxy::Graphics::Renderer::GetClearColor() const']]],
+  ['getdeltatime_2',['GetDeltaTime',['../classDeoxy_1_1Time.html#ae295996b760be3d1c48c0fe40d93d9c5',1,'Deoxy::Time']]],
+  ['getfps_3',['GetFPS',['../classDeoxy_1_1Time.html#a08096010fe05da12162e73fd5d7a41e4',1,'Deoxy::Time']]],
+  ['getfpsapprox_4',['GetFPSApprox',['../classDeoxy_1_1Time.html#a74fde04d5a4999d74f1c41f80dd12ccc',1,'Deoxy::Time']]],
+  ['getgui_5',['getgui',['../classDeoxy_1_1Application.html#a993cc471598a473e01f421bb7927beaf',1,'Deoxy::Application::GetGUI()'],['../classDeoxy_1_1Application.html#a8b66f29199f17330ff54eafc6d1a948f',1,'Deoxy::Application::GetGUI() const']]],
+  ['getguisettings_6',['getguisettings',['../classDeoxy_1_1Application.html#a0c8c3821551e2571c556ff1b2b66ec2f',1,'Deoxy::Application::GetGUISettings()'],['../classDeoxy_1_1Application.html#a1e002bd1086235718ed2677391760ba6',1,'Deoxy::Application::GetGUISettings() const']]],
+  ['gethandle_7',['gethandle',['../classDeoxy_1_1Platform_1_1Window.html#ae6dffacde39b0a1532806891172df51e',1,'Deoxy::Platform::Window::GetHandle()'],['../classDeoxy_1_1Platform_1_1Window.html#a391a60a9946aa773959a29283fe86fb4',1,'Deoxy::Platform::Window::GetHandle() const']]],
+  ['getinput_8',['getinput',['../classDeoxy_1_1Application.html#ac4ae8726207c10039b1650617b37f702',1,'Deoxy::Application::GetInput()'],['../classDeoxy_1_1Application.html#ac4bb7ec631cf287528e45996df5bab68',1,'Deoxy::Application::GetInput() const']]],
+  ['getmousedeltax_9',['GetMouseDeltaX',['../classDeoxy_1_1Input.html#ae2eabe4d9b6daf7b2d92f2a2705abd3c',1,'Deoxy::Input']]],
+  ['getmousedeltay_10',['GetMouseDeltaY',['../classDeoxy_1_1Input.html#a4d4fa59bd5507b86c40df37ee68693f1',1,'Deoxy::Input']]],
+  ['getmousex_11',['GetMouseX',['../classDeoxy_1_1Input.html#a92dd58d3f851941f7fa1ca60d2708590',1,'Deoxy::Input']]],
+  ['getmousey_12',['GetMouseY',['../classDeoxy_1_1Input.html#aeab4e986597e12a976646b7b48573dfd',1,'Deoxy::Input']]],
+  ['getpointer_13',['GetPointer',['../namespaceDeoxy_1_1Math.html#ab77147b7eed6e6d07615a0e82e4b2369',1,'Deoxy::Math']]],
+  ['getproperties_14',['getproperties',['../classDeoxy_1_1Platform_1_1Window.html#aa8cb96807d8d927c8a0529f2267e054a',1,'Deoxy::Platform::Window::GetProperties()'],['../classDeoxy_1_1Platform_1_1Window.html#ab86f2c0a9f67249ae3faa7daabaaa871',1,'Deoxy::Platform::Window::GetProperties() const']]],
+  ['getrenderer_15',['getrenderer',['../classDeoxy_1_1Application.html#a16f0dec0549f4d66e1bf0175f8203729',1,'Deoxy::Application::GetRenderer()'],['../classDeoxy_1_1Application.html#ac406e7bb9beddab43b5eeda462b07a72',1,'Deoxy::Application::GetRenderer() const']]],
+  ['getscrollx_16',['GetScrollX',['../classDeoxy_1_1Input.html#a444cf48a60ecad5a80b696fab4259168',1,'Deoxy::Input']]],
+  ['getscrolly_17',['GetScrollY',['../classDeoxy_1_1Input.html#aa0c2e4e1e7e3d09104f3e7614fb4695f',1,'Deoxy::Input']]],
+  ['getsettings_18',['getsettings',['../classDeoxy_1_1GUI.html#a41fc11f2b4610cca3aee5ce1b415c37a',1,'Deoxy::GUI::GetSettings()'],['../classDeoxy_1_1GUI.html#a05dd85f819204e972e7f51afa36f8545',1,'Deoxy::GUI::GetSettings() const']]],
+  ['gettheme_19',['GetTheme',['../classDeoxy_1_1GUISettings.html#ada005f014c141199b6616f764f537a00',1,'Deoxy::GUISettings']]],
+  ['gettime_20',['gettime',['../classDeoxy_1_1Application.html#ac61837235aef44d5460dd3a5b2a009ed',1,'Deoxy::Application::GetTime()'],['../classDeoxy_1_1Application.html#abfff2a0e3146a2045caf9df27b398708',1,'Deoxy::Application::GetTime() const']]],
+  ['getwindow_21',['getwindow',['../classDeoxy_1_1Application.html#ada3e99978c3f0c0fa384f38095aa040f',1,'Deoxy::Application::GetWindow()'],['../classDeoxy_1_1Application.html#a878063ab996f433553cd38edaea5fd08',1,'Deoxy::Application::GetWindow() const']]]
+];

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Interface e GUI - Deoxy Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Interface e GUI";
+        var mkdocs_page_input_path = "guides/gui.pt.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/cpp.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/c.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../index.html" class="icon icon-home"> Deoxy Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Começando</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../getting-started/installation.html">Instalação</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../getting-started/quick-start.html">Início Rápido</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Recursos e Guias</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="window.html">Sistema de Janela</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="input.html">Sistema de Input</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="graphics.html">Renderização e Gráficos</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Interface e GUI</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#customizando-o-visual-guisettings">Customizando o Visual (GUISettings)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#exemplo-de-configuracao">Exemplo de Configuração:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#desenhando-elementos-de-interface-gui">Desenhando Elementos de Interface (GUI):</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1-desenhando-texto-direto-na-tela-overlays">1. Desenhando Texto Direto na Tela (Overlays)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2-posicionando-janelas-com-precisao">2. Posicionando Janelas com Precisão</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="utilities.html">Utilidades, Logs e Assertions</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="/DeoxyGL/api/index.html">Referencia de API</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Idioma</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="/index.html">🇧🇷 Português Brasil</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="/en/index.html">🇺🇸 English</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Deoxy Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Recursos e Guias</li>
+      <li class="breadcrumb-item active">Interface e GUI</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="interface-e-gui">Interface e GUI<a class="headerlink" href="#interface-e-gui" title="Permanent link">🛈</a></h1>
+<p>A Deoxy traz integração nativa com a <strong>Dear ImGui</strong>, permitindo a criação rápida de interfaces de depuração, menus e ferramentas para o seu jogo. O controle do sistema é dividido entre a interface principal (<code>GUI</code>) e suas customizações visuais (<code>GUISettings</code>).</p>
+<p>Toda a lógica de interface deve ser isolada dentro do método <strong><code>OnRenderGUI()</code></strong> do ciclo de vida da sua aplicação.</p>
+<hr />
+<h2 id="customizando-o-visual-guisettings">Customizando o Visual (<code>GUISettings</code>)<a class="headerlink" href="#customizando-o-visual-guisettings" title="Permanent link">🛈</a></h2>
+<p>A biblioteca permite alterar o comportamento e os temas da interface na inicialização. Você pode acessar essas opções chamando <code>GetGUISettings()</code> dentro do <code>OnStart()</code>:</p>
+<ul>
+<li><strong>Temas Disponíveis (<code>GUITheme</code>)</strong>:<ul>
+<li><code>Deoxy::GUITheme::Default</code>: O tema clássico da Dear ImGui.</li>
+<li><code>Deoxy::GUITheme::Rest</code>: Um estilo escuro moderno (baseado no <em>Rest style</em> por AaronBeardless).</li>
+</ul>
+</li>
+<li><strong>Suporte a Docking</strong>: Permite arrastar, acoplar e organizar janelas da interface de forma livre pela tela.</li>
+</ul>
+<h3 id="exemplo-de-configuracao">Exemplo de Configuração:<a class="headerlink" href="#exemplo-de-configuracao" title="Permanent link">🛈</a></h3>
+<pre><code class="language-cpp">void OnStart() override {
+    // Ativa o tema moderno Rest
+    GetGUISettings().SetTheme(Deoxy::GUITheme::Rest);
+
+    // Ativa o suporte a acoplamento de janelas (Docking)
+    GetGUISettings().SetDocked(true);
+}
+</code></pre>
+<hr />
+<h2 id="desenhando-elementos-de-interface-gui">Desenhando Elementos de Interface (<code>GUI</code>):<a class="headerlink" href="#desenhando-elementos-de-interface-gui" title="Permanent link">🛈</a></h2>
+<p>Dentro do método OnRenderGUI(), a Deoxy já inicializa e encerra o frame do ImGui automaticamente debaixo dos panos. Você pode usar tanto os comandos padrão da API do ImGui quanto as funções utilitárias da Deoxy via GetGUI().</p>
+<h3 id="1-desenhando-texto-direto-na-tela-overlays">1. Desenhando Texto Direto na Tela (Overlays)<a class="headerlink" href="#1-desenhando-texto-direto-na-tela-overlays" title="Permanent link">🛈</a></h3>
+<p>Para desenhar textos (como contadores de FPS ou status de debug) flutuando na tela sem precisar abrir uma janela do ImGui, use o método <code>DrawText</code>. Ele aceita tanto <code>Color</code> (valores de 0.0f a 1.0f) quanto <code>Color32</code> (valores de 0 a 255):</p>
+<pre><code class="language-cpp">void OnRenderGUI() override {
+    // Desenha usando Deoxy::Color (RGBA normalizado)
+    GetGUI().DrawText(10, 10, Deoxy::Color(1.0f, 1.0f, 1.0f, 1.0f), &quot;FPS: 60&quot;);
+
+    // Desenha usando Deoxy::Color32 (RGBA de 8-bits)
+    GetGUI().DrawText(10, 30, Deoxy::Color32(255, 255, 0, 255), &quot;Debug Mode Actived&quot;);
+}
+</code></pre>
+<h3 id="2-posicionando-janelas-com-precisao">2. Posicionando Janelas com Precisão<a class="headerlink" href="#2-posicionando-janelas-com-precisao" title="Permanent link">🛈</a></h3>
+<p>Se você precisar criar uma janela centralizada (como um menu de Pause ou Game Over), o método <code>SetNextWindowCentered</code> calcula a posição automaticamente com base na resolução atual da janela:</p>
+<pre><code class="language-cpp">void OnRenderGUI() override {
+    if (m_gamePaused) {
+        // Centraliza a próxima janela do ImGui com um tamanho de 200x150
+        GetGUI().SetNextWindowCentered({200, 150});
+
+        ImGui::Begin(&quot;Pause Menu&quot;, nullptr, ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoResize);
+        if (ImGui::Button(&quot;Resume&quot;)) m_gamePaused = false;
+        if (ImGui::Button(&quot;Quit&quot;)) Quit();
+        ImGui::End();
+    }
+}
+</code></pre>
+<div class="admonition note">
+<p class="admonition-title">Nota sobre o ImGui</p>
+<p>Como a Deoxy gerencia o contexto nativo, você está livre para utilizar qualquer função da API padrão da <code>ImGui::</code>(como <code>ImGui::Begin</code>, <code>ImGui::SliderFloat</code>, <code>ImGui::ColorEdit4</code>) diretamente no seu escopo, desde que estejam dentro de <code>OnRenderGUI()</code>.</p>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="graphics.html" class="btn btn-neutral float-left" title="Renderização e Gráficos"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="utilities.html" class="btn btn-neutral float-right" title="Utilidades, Logs e Assertions">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="graphics.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="utilities.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

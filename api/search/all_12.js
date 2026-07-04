@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['s_0',['S',['../group__Input.html#ggacf1bbd7911a5f474d6d2b41636c04c14a5dbc98dcc983a70728bd082d1a47546e',1,'Deoxy']]],
+  ['setclearcolor_1',['SetClearColor',['../classDeoxy_1_1Graphics_1_1Renderer.html#abfbebfd3392833536b98d804d1dcd5db',1,'Deoxy::Graphics::Renderer']]],
+  ['setdefault_2',['SetDefault',['../classDeoxy_1_1GUISettings.html#a2ac58e562666a1573954253fd9b2bfea',1,'Deoxy::GUISettings']]],
+  ['setdocked_3',['SetDocked',['../classDeoxy_1_1GUISettings.html#abaf488de2faf8695dabcd29cb9f101e6',1,'Deoxy::GUISettings']]],
+  ['setnextwindowcentered_4',['SetNextWindowCentered',['../classDeoxy_1_1GUI.html#a00e5f43080206b051be8ce460ac5742e',1,'Deoxy::GUI']]],
+  ['settheme_5',['SetTheme',['../classDeoxy_1_1GUISettings.html#a97155b3dca6928d93ceb652b3df308ef',1,'Deoxy::GUISettings']]],
+  ['setwindowicon_6',['SetWindowIcon',['../classDeoxy_1_1Platform_1_1Window.html#a656aa132b2b49631695dce0c99ad26ad',1,'Deoxy::Platform::Window']]],
+  ['setwindowmode_7',['SetWindowMode',['../classDeoxy_1_1Platform_1_1Window.html#aee35d1c330e83dfecbcacf0cf215803d',1,'Deoxy::Platform::Window']]],
+  ['setwindowsize_8',['SetWindowSize',['../classDeoxy_1_1Platform_1_1Window.html#ae4ae562b6e5d02dc5eaa94f573673470',1,'Deoxy::Platform::Window']]],
+  ['setwindowtitle_9',['SetWindowTitle',['../classDeoxy_1_1Platform_1_1Window.html#a7a8182033bae943604bbe8361be441aa',1,'Deoxy::Platform::Window']]],
+  ['setwindowvsync_10',['SetWindowVsync',['../classDeoxy_1_1Platform_1_1Window.html#ab9b12983227d21991eccd74995aedcf9',1,'Deoxy::Platform::Window']]],
+  ['seven_11',['Seven',['../group__Input.html#ggacf1bbd7911a5f474d6d2b41636c04c14a12e67aac3e7f9227cc35f8f047d7dc74',1,'Deoxy']]],
+  ['shouldclose_12',['ShouldClose',['../classDeoxy_1_1Platform_1_1Window.html#ab262954db30cd27431ffffa394cb95b9',1,'Deoxy::Platform::Window']]],
+  ['sin_13',['Sin',['../namespaceDeoxy_1_1Math.html#a9ad8e04a1586f1d75e4cc89448b539e4',1,'Deoxy::Math']]],
+  ['six_14',['Six',['../group__Input.html#ggacf1bbd7911a5f474d6d2b41636c04c14ae6fbc0b9673f8c86726688d7607fc8f5',1,'Deoxy']]],
+  ['space_15',['Space',['../group__Input.html#ggacf1bbd7911a5f474d6d2b41636c04c14ad511f8439ecde36647437fbba67a4394',1,'Deoxy']]],
+  ['super_16',['Super',['../group__Input.html#ggacf1bbd7911a5f474d6d2b41636c04c14a0ce3266d4eb71ad50f7a90aee6d21dcd',1,'Deoxy']]],
+  ['swapbuffers_17',['SwapBuffers',['../classDeoxy_1_1Platform_1_1Window.html#abdf9342537ffe40445206ade09335ba4',1,'Deoxy::Platform::Window']]]
+];

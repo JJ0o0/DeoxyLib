@@ -1,0 +1,5 @@
+<map id="Deoxy::Application::OnQuit" name="Deoxy::Application::OnQuit">
+<area shape="rect" id="Node000001" title="Called once before the application exits." alt="" coords="231,5,375,45"/>
+<area shape="rect" id="Node000002" href="$classDeoxy_1_1Application.html#a86b7c7c16ca539e290a6bcc4043238d0" title="Starts the main application loop." alt="" coords="5,13,183,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,28,183,28,183,23,217,23"/>
+</map>

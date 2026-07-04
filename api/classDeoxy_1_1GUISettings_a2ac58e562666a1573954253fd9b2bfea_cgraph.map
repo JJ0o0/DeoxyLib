@@ -1,0 +1,9 @@
+<map id="Deoxy::GUISettings::SetDefault" name="Deoxy::GUISettings::SetDefault">
+<area shape="rect" id="Node000001" title="Restores all GUI settings to their default values." alt="" coords="5,37,153,77"/>
+<area shape="rect" id="Node000002" href="$classDeoxy_1_1GUISettings.html#a3367a61d50cae9d6f058d712549a7884" title="Restores the current theme to its default state." alt="" coords="201,5,349,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,43,187,37,188,42,154,48"/>
+<area shape="rect" id="Node000004" href="$classDeoxy_1_1GUISettings.html#abaf488de2faf8695dabcd29cb9f101e6" title="Enables or disables docking support." alt="" coords="201,69,349,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="154,67,188,72,187,78,153,72"/>
+<area shape="rect" id="Node000003" href="$classDeoxy_1_1GUISettings.html#a97155b3dca6928d93ceb652b3df308ef" title="Applies a predefined GUI theme." alt="" coords="397,5,545,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="350,23,383,23,383,28,350,28"/>
+</map>

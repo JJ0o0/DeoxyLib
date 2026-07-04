@@ -1,0 +1,23 @@
+<map id="Deoxy::Application::Run" name="Deoxy::Application::Run">
+<area shape="rect" id="Node000001" title="Starts the main application loop." alt="" coords="5,287,183,312"/>
+<area shape="rect" id="Node000002" href="$classDeoxy_1_1Time.html#ae295996b760be3d1c48c0fe40d93d9c5" title="Returns the delta time of the last frame." alt="" coords="231,5,433,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,286,109,239,134,173,173,102,199,69,229,41,239,34,242,39,232,45,203,73,178,105,139,175,114,241,101,287"/>
+<area shape="rect" id="Node000003" href="$classDeoxy_1_1Logging_1_1Logger.html#a98c9a8f2e21786cada1b803565bcc6ca" title="Initializes the logging system." alt="" coords="245,55,419,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="98,285,116,250,144,201,182,150,229,105,237,100,240,104,232,109,186,153,148,204,120,252,103,288"/>
+<area shape="rect" id="Node000004" href="$classDeoxy_1_1Application.html#a681d5c8b558c0a44ec9787c664480d3f" title="Called once before the application exits." alt="" coords="260,119,404,159"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="104,285,154,229,189,197,229,169,246,161,248,165,232,174,193,201,157,233,107,288"/>
+<area shape="rect" id="Node000005" href="$classDeoxy_1_1Application.html#a73b8c24953fb2687df3e2305621f2c7a" title="Called every frame to render the scene." alt="" coords="260,183,404,223"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="119,284,230,233,250,225,251,230,232,238,121,289"/>
+<area shape="rect" id="Node000006" href="$classDeoxy_1_1Application.html#a0de227cb7159aa49a281a8bba112166b" title="Called every frame to render ImGui widgets." alt="" coords="260,247,404,287"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="183,285,246,276,247,281,183,290"/>
+<area shape="rect" id="Node000007" href="$classDeoxy_1_1Application.html#add2747e7a655e050aed5deec9d9c2c52" title="Called once when the application starts." alt="" coords="260,311,404,351"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="183,309,247,317,246,323,183,314"/>
+<area shape="rect" id="Node000008" href="$classDeoxy_1_1Application.html#a502a05bf08273095cb7594c2e0b84693" title="Called every frame." alt="" coords="260,375,404,415"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="121,310,232,361,251,368,250,373,230,366,119,315"/>
+<area shape="rect" id="Node000009" href="$classDeoxy_1_1Time.html#a343e2a3514aa678d2d22ea4837232b90" title="Reset time state." alt="" coords="257,440,407,465"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="107,310,157,366,192,398,232,425,249,433,247,438,229,430,189,402,153,370,103,314"/>
+<area shape="rect" id="Node000010" href="$classDeoxy_1_1Input.html#ab1f3f31078635409ebca0207843ff117" title="Updates the input state." alt="" coords="253,489,411,515"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="104,311,121,345,149,389,187,435,232,474,245,482,242,486,229,479,183,439,145,392,117,347,99,314"/>
+<area shape="rect" id="Node000011" href="$classDeoxy_1_1Time.html#a8a7d79df8aeafa98584ca3a741b94242" title="Updates the time state." alt="" coords="253,539,411,564"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="102,312,116,353,143,411,181,472,205,500,232,524,243,531,240,535,229,528,201,504,177,475,138,414,112,355,97,313"/>
+</map>

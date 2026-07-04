@@ -1,0 +1,16 @@
+<map id="Deoxy/include/deoxy/graphics/renderer.hpp" name="Deoxy/include/deoxy/graphics/renderer.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="119,5,286,45"/>
+<area shape="rect" id="Node000002" href="$color_8hpp.html" title=" " alt="" coords="61,93,208,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,47,156,84,152,81,184,44"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="232,93,309,119"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="221,44,254,81,250,84,217,47"/>
+<area shape="rect" id="Node000003" href="$math_8hpp.html" title=" " alt="" coords="115,167,296,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="148,117,186,155,182,159,144,121"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,240,109,265"/>
+<area shape="poly" id="edge6_Node000002_Node000004" title=" " alt="" coords="131,120,105,168,72,229,68,227,100,165,126,117"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="183,194,95,236,93,232,180,190"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="134,240,290,265"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="209,192,212,226,207,227,204,193"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="314,240,377,265"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="229,190,312,231,309,236,227,194"/>
+</map>

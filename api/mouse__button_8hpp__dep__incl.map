@@ -1,0 +1,16 @@
+<map id="Deoxy/include/deoxy/input/mouse_button.hpp" name="Deoxy/include/deoxy/input/mouse_button.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="51,5,235,45"/>
+<area shape="rect" id="Node000002" href="$deoxy_8hpp.html" title=" " alt="" coords="5,269,164,309"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,59,92,270,86,268,134,58"/>
+<area shape="rect" id="Node000003" href="$input_8hpp.html" title=" " alt="" coords="216,93,375,133"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="190,50,263,91,261,96,187,54"/>
+<area shape="rect" id="Node000004" href="$application_8hpp.html" title=" " alt="" coords="123,181,281,221"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="266,145,224,183,221,179,263,141"/>
+<area shape="rect" id="Node000006" href="$input_8cpp.html" title=" " alt="" coords="306,181,474,221"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="328,141,371,179,367,183,325,145"/>
+<area shape="rect" id="Node000007" href="$window_8cpp.html" title=" " alt="" coords="499,181,689,221"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="375,135,529,179,528,184,373,140"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="166,232,112,271,109,267,163,228"/>
+<area shape="rect" id="Node000005" href="$application_8cpp.html" title=" " alt="" coords="189,277,423,302"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="237,228,293,274,290,278,234,232"/>
+</map>
