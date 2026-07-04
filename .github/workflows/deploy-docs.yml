@@ -1,0 +1,42 @@
+name: Deploy MkDocs and Doxygen to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install doxygen and graphviz (DOT)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y doxygen graphviz
+
+      - name: Configure python
+        uses: actions/tools/python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install mkdocs dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install mkdocs mkdocs-readthedocs-theme mkdocs-static-i18n
+
+      - name: Generate API Reference (Doxygen)
+        run: |
+          mkdir -p build/docs
+          doxygen Doxyfile
+
+      - name: Build and Deploy to gh-pages
+        run: |
+          mkdocs gh-deploy --force --dirty

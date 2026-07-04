@@ -38,7 +38,7 @@ namespace Deoxy {
             OnRender();
 
             m_gui->NewFrame();
-            ImGui::DockSpaceOverViewport(0, ImGui::GetMainViewport(), ImGuiDockNodeFlags_PassthruCentralNode);
+            if (m_gui->GetSettings().IsDocked()) ImGui::DockSpaceOverViewport(0, ImGui::GetMainViewport(), ImGuiDockNodeFlags_PassthruCentralNode);
             OnRenderGUI();
             m_gui->EndFrame();
             

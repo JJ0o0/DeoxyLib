@@ -111,6 +111,11 @@ namespace Deoxy::Platform {
         else SetWindowMode(WindowMode::ExclusiveFullscreen);
     }
 
+    void Window::ToggleVsync() {
+        bool enabled = m_properties.VSync;
+        SetWindowVsync(!enabled);
+    }
+
     void Window::SetWindowTitle(const std::string& title) {
         if (title.empty()) {
             DEOXY_ERROR("Could not change window title: Empty title.");

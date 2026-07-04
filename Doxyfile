@@ -1,0 +1,33 @@
+PROJECT_NAME           = "Deoxy"
+PROJECT_BRIEF          = "A simplified Game Library."
+
+INPUT                  = Deoxy
+RECURSIVE              = YES
+
+OUTPUT_DIRECTORY       = build/docs
+HTML_OUTPUT            = api
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = NO
+
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
+FULL_SIDEBAR           = NO
+HTML_EXTRA_STYLESHEET  = Vendor/doxygen-awesome-css/doxygen-awesome.css
+
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+CLASS_GRAPH            = YES
+CLASS_DIAGRAMS         = YES
+
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = NO
+SKIP_FUNCTION_MACROS   = NO

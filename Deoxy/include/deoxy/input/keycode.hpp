@@ -1,13 +1,25 @@
 #pragma once
 
 namespace Deoxy {
+    /**
+     * @ingroup Input
+     * @brief Keyboard key identifiers.
+     *
+     * Represents keyboard keys supported by the input system.
+     */
     enum class KeyCode {
+        /**
+         * @brief Invalid or unknown key.
+         */
         Unknown = -1,
 
         Q, W, E, R, T, Y, U, I, O, P,
         A, S, D, F, G, H, J, K, L,
         Z, X, C, V, B, N, M,
 
+        /**
+         * @brief The Ç key found on Brazilian keyboards.
+         */
         Ccedilla,
 
         LeftShift, RightShift,
@@ -21,6 +33,11 @@ namespace Deoxy {
 
         Up, Down, Left, Right,
 
+        /**
+         * @brief Total number of key codes.
+         * 
+         * Used internally for array sizing and iteration.
+         */
         Count
     };
 }

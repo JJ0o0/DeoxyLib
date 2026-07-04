@@ -19,7 +19,7 @@ namespace Deoxy::Graphics {
 
     }
 
-    void RendererContext::Clear(Color& color) {
+    void RendererContext::Clear(const Color& color) {
         glClearColor(color.r, color.g, color.b, color.a);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     }

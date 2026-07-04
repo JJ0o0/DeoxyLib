@@ -1,0 +1,63 @@
+site_name: Deoxy Docs
+site_dir: build/docs
+
+use_directory_urls: false
+
+theme:
+  name: readthedocs
+  locale: pt_BR
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - cpp
+    - c
+  include_homepage_in_sidebar: true
+  prev_next_buttons_location: bottom
+  navigation_depth: 3
+  sticky_navigation: true
+
+plugins:
+  - search
+  - i18n:
+      languages:
+        - locale: pt
+          name: Portugues
+          default: true
+          build: true
+        - locale: en
+          name: English
+          build: true
+          nav_translations:
+            Home: Home
+            Começando: Getting Started
+            Instalação: Installation
+            Início Rápido: Quick Start
+            Recursos e Guias: Features and Guides
+            Sistema de Janela: Window System
+            Sistema de Input: Input System
+            Renderização e Gráficos: Rendering and Graphics
+            Interface e GUI: UI and GUI
+            Utilidades, Logs e Assertions: Utilities, Logs and Assertions
+            Referencia de API: API Reference
+            Idioma: Language
+
+nav:
+  - Home: index.md
+  - Começando:
+      - Instalação: getting-started/installation.md
+      - Início Rápido: getting-started/quick-start.md
+  - Recursos e Guias:
+      - Sistema de Janela: guides/window.md
+      - Sistema de Input: guides/input.md
+      - Renderização e Gráficos: guides/graphics.md
+      - Interface e GUI: guides/gui.md
+      - Utilidades, Logs e Assertions: guides/utilities.md
+  - Referencia de API: /DeoxyGL/api/index.html
+  - Idioma:
+      - 🇧🇷 Português Brasil: /index.html
+      - 🇺🇸 English: /en/index.html
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: "🛈"

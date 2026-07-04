@@ -7,25 +7,114 @@
 #include <cstddef>
 
 namespace Deoxy {
+    /**
+     * @ingroup Input 
+     * @brief Provides keyboard and mouse input state.
+     *
+     * The Input class allows querying the current and previous
+     * state of keyboard keys and mouse buttons, as well as
+     * mouse movement and scroll information.
+     */
     class Input {
         public:
+            /**
+             * @brief Updates the input state.
+             * 
+             * Called internally once per frame.
+             *
+             * @note This function is called internally by the engine and
+             * should not be invoked by user code.
+             */
             void Update();
 
+            /**
+             * @brief Returns whether a key is currently held down.
+             * 
+             * @param key Key to query.
+             * @return true if the key is down.
+             */
             bool IsKeyDown(KeyCode key);
+
+            /**
+             * @brief Returns whether a key was pressed this frame.
+             * 
+             * @param key Key to query.
+             * @return true if the key transitioned from up to down.
+             */
             bool WasKeyPressed(KeyCode key);
+
+            /**
+             * @brief Returns whether a key was released this frame.
+             * 
+             * @param key Key to query.
+             * @return true if the key transitioned from down to up.
+             */
             bool WasKeyReleased(KeyCode key);
 
+            /**
+             * @brief Returns whether a mouse button is currently held down.
+             * 
+             * @param button button to query.
+             * @return true if the mouse button is down.
+             */
             bool IsMouseButtonDown(MouseButton button);
+
+            /**
+             * @brief Returns whether a mouse button was pressed this frame.
+             * 
+             * @param button button to query.
+             * @return true if the mouse button transitioned from up to down.
+             */
             bool WasMouseButtonPressed(MouseButton button);
+
+            /**
+             * @brief Returns whether a mouse button was released this frame.
+             * 
+             * @param button button to query.
+             * @return true if the mouse button transitioned from down to up.
+             */
             bool WasMouseButtonReleased(MouseButton button);
 
+            /**
+             * @brief Returns the current mouse X position.
+             * 
+             * @return Mouse position in pixels.
+             */
             float GetMouseX();
+
+            /**
+             * @brief Returns the current mouse Y position.
+             * 
+             * @return Mouse position in pixels.
+             */
             float GetMouseY();
 
+            /**
+             * @brief Returns the horizontal mouse movement since the last frame.
+             * 
+             * @return Delta in pixels.
+             */
             float GetMouseDeltaX();
+
+            /**
+             * @brief Returns the vertical mouse movement since the last frame.
+             * 
+             * @return Delta in pixels.
+             */
             float GetMouseDeltaY();
 
+            /**
+             * @brief Returns the horizontal scroll offset for the current frame.
+             * 
+             * @return Scroll offset in pixels.
+             */
             float GetScrollX();
+
+            /**
+             * @brief Returns the vertical scroll offset for the current frame.
+             * 
+             * @return Scroll offset in pixels.
+             */
             float GetScrollY();
         private:
             friend class Platform::Window;

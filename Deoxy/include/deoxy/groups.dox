@@ -1,0 +1,29 @@
+/**
+ * @defgroup Core Core
+ * @brief Core engine systems.
+ */
+
+/**
+ * @defgroup Logging Logging
+ * @brief Logging and diagnostic utilities.
+ */
+
+/**
+ * @defgroup Graphics Graphics
+ * @brief Rendering and graphics systems.
+ */
+
+/**
+ * @defgroup Platform Platform
+ * @brief Platform abstraction layer.
+ */
+
+/**
+ * @defgroup Input Input
+ * @brief Input handling systems.
+ */
+
+/**
+ * @defgroup GUI GUI
+ * @brief Immediate mode GUI systems.
+ */
