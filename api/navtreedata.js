@@ -57,8 +57,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"index.html"
+"Deoxy_8hpp.html",
+"gui__handler_8hpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

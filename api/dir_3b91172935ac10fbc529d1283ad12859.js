@@ -7,6 +7,6 @@ var dir_3b91172935ac10fbc529d1283ad12859 =
     [ "platform", "dir_407e0674651b583a95f422cfdef087d1.html", "dir_407e0674651b583a95f422cfdef087d1" ],
     [ "utilities", "dir_b39732657d0f4bda10fd11dcaf6324dc.html", "dir_b39732657d0f4bda10fd11dcaf6324dc" ],
     [ "application.hpp", "application_8hpp.html", null ],
-    [ "deoxy.hpp", "deoxy_8hpp.html", "deoxy_8hpp" ],
+    [ "deoxy.hpp", "deoxy_8hpp.html", null ],
     [ "time.hpp", "time_8hpp.html", null ]
 ];

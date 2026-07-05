@@ -4,112 +4,112 @@
         <loc>Noneindex.html</loc>
         <lastmod>2026-07-05</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pt" href="Noneindex.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneindex.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/index.html"/>
     </url>
     <url>
         <loc>Nonegetting-started/installation.html</loc>
         <lastmod>2026-07-05</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pt" href="Nonegetting-started/installation.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/getting-started/installation.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonegetting-started/installation.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/getting-started/installation.html"/>
     </url>
     <url>
         <loc>Nonegetting-started/quick-start.html</loc>
         <lastmod>2026-07-05</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pt" href="Nonegetting-started/quick-start.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/getting-started/quick-start.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonegetting-started/quick-start.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/getting-started/quick-start.html"/>
     </url>
     <url>
         <loc>Noneguides/graphics.html</loc>
         <lastmod>2026-07-05</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pt" href="Noneguides/graphics.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/guides/graphics.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneguides/graphics.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/guides/graphics.html"/>
     </url>
     <url>
         <loc>Noneguides/gui.html</loc>
         <lastmod>2026-07-05</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pt" href="Noneguides/gui.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/guides/gui.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneguides/gui.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/guides/gui.html"/>
     </url>
     <url>
         <loc>Noneguides/input.html</loc>
         <lastmod>2026-07-05</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pt" href="Noneguides/input.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/guides/input.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneguides/input.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/guides/input.html"/>
     </url>
     <url>
         <loc>Noneguides/utilities.html</loc>
         <lastmod>2026-07-05</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pt" href="Noneguides/utilities.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/guides/utilities.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneguides/utilities.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/guides/utilities.html"/>
     </url>
     <url>
         <loc>Noneguides/window.html</loc>
         <lastmod>2026-07-05</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="pt" href="Noneguides/window.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/guides/window.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneguides/window.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/guides/window.html"/>
     </url>
     <url>
-        <loc>Noneen/index.html</loc>
+        <loc>Nonept/index.html</loc>
         <lastmod>2026-07-05</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/index.html"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="Noneindex.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/index.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneindex.html"/>
     </url>
     <url>
-        <loc>Noneen/getting-started/installation.html</loc>
+        <loc>Nonept/getting-started/installation.html</loc>
         <lastmod>2026-07-05</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/getting-started/installation.html"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="Nonegetting-started/installation.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/getting-started/installation.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonegetting-started/installation.html"/>
     </url>
     <url>
-        <loc>Noneen/getting-started/quick-start.html</loc>
+        <loc>Nonept/getting-started/quick-start.html</loc>
         <lastmod>2026-07-05</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/getting-started/quick-start.html"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="Nonegetting-started/quick-start.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/getting-started/quick-start.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Nonegetting-started/quick-start.html"/>
     </url>
     <url>
-        <loc>Noneen/guides/graphics.html</loc>
+        <loc>Nonept/guides/graphics.html</loc>
         <lastmod>2026-07-05</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/guides/graphics.html"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="Noneguides/graphics.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/guides/graphics.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneguides/graphics.html"/>
     </url>
     <url>
-        <loc>Noneen/guides/gui.html</loc>
+        <loc>Nonept/guides/gui.html</loc>
         <lastmod>2026-07-05</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/guides/gui.html"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="Noneguides/gui.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/guides/gui.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneguides/gui.html"/>
     </url>
     <url>
-        <loc>Noneen/guides/input.html</loc>
+        <loc>Nonept/guides/input.html</loc>
         <lastmod>2026-07-05</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/guides/input.html"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="Noneguides/input.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/guides/input.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneguides/input.html"/>
     </url>
     <url>
-        <loc>Noneen/guides/utilities.html</loc>
+        <loc>Nonept/guides/utilities.html</loc>
         <lastmod>2026-07-05</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/guides/utilities.html"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="Noneguides/utilities.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/guides/utilities.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneguides/utilities.html"/>
     </url>
     <url>
-        <loc>Noneen/guides/window.html</loc>
+        <loc>Nonept/guides/window.html</loc>
         <lastmod>2026-07-05</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="Noneen/guides/window.html"/>
-        <xhtml:link rel="alternate" hreflang="pt" href="Noneguides/window.html"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="Nonept/guides/window.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="Noneguides/window.html"/>
     </url>
 </urlset>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Sistema de Janela - Deoxy Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Sistema de Janela";
+        var mkdocs_page_input_path = "guides/window.pt.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/cpp.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/c.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../index.html" class="icon icon-home"> Deoxy Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../index.html">Inicio</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Começando</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../getting-started/installation.html">Instalação</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../getting-started/quick-start.html">Inicio Rápido</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Recursos e Guias</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Sistema de Janela</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#configuracao-inicial">Configuração Inicial</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#manipulacao-em-tempo-real">Manipulação em Tempo Real</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#alterando-propriedades-basicas">Alterando Propriedades Básicas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#controle-de-tela-cheia-e-vsync">Controle de Tela Cheia e VSync</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lendo-propriedades-da-janela">Lendo Propriedades da Janela</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#recursos-avancados">Recursos Avançados</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="input.html">Sistema de Input</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="graphics.html">Renderização e Gráficos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="gui.html">Interface e GUI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="utilities.html">Utilidades, Logs e Assertions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Mais</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="/DeoxyLib/api/">Referência da API</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Idioma</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="/DeoxyLib/">🇺🇸 English</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="/DeoxyLib/pt/">🇧🇷 Português</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Deoxy Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Recursos e Guias</li>
+      <li class="breadcrumb-item active">Sistema de Janela</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="sistema-de-janela">Sistema de Janela<a class="headerlink" href="#sistema-de-janela" title="Permanent link">🛈</a></h1>
+<p>O gerenciamento da janela principal na Deoxy é feito pela classe <code>Deoxy::Platform::Window</code>. Você pode interagir com ela tanto definindo suas propriedades iniciais quanto alterando seu estado em tempo real durante a execução do jogo.</p>
+<hr />
+<h2 id="configuracao-inicial">Configuração Inicial<a class="headerlink" href="#configuracao-inicial" title="Permanent link">🛈</a></h2>
+<p>Por padrão, a Deoxy inicializa uma janela de <code>800x600</code> em modo janela com VSync ativado. No entanto, se o seu construtor herdar de <code>Deoxy::Application</code>, você pode customizar esse estado passando uma struct <code>WindowProperties</code>.</p>
+<p>A estrutura aceita os seguintes campos:</p>
+<ul>
+<li><code>Title</code> (std::string): Título da janela.</li>
+<li><code>Icon</code> (std::string): Caminho para a imagem <code>.png</code>.</li>
+<li><code>Width</code> / <code>Height</code> (uint32_t): Resolução em pixels.</li>
+<li><code>Mode</code> (<code>WindowMode</code>): Estado da tela (<code>Windowed</code>, <code>BorderlessFullscreen</code>, ou <code>ExclusiveFullscreen</code>).</li>
+<li><code>VSync</code> (bool): Ativa ou desativa a sincronização vertical.</li>
+</ul>
+<hr />
+<h2 id="manipulacao-em-tempo-real">Manipulação em Tempo Real<a class="headerlink" href="#manipulacao-em-tempo-real" title="Permanent link">🛈</a></h2>
+<p>Dentro de qualquer método do ciclo de vida da sua aplicação (como <code>OnStart</code> ou <code>OnUpdate</code>), você pode acessar a instância da janela ativa utilizando o método <code>GetWindow()</code>.</p>
+<h3 id="alterando-propriedades-basicas">Alterando Propriedades Básicas<a class="headerlink" href="#alterando-propriedades-basicas" title="Permanent link">🛈</a></h3>
+<pre><code class="language-cpp">void OnStart() override {
+    // Define o título dinamicamente
+    GetWindow().SetWindowTitle(&quot;Deoxy Engine - Edição de Criação&quot;);
+
+    // Redimensiona a janela
+    GetWindow().SetWindowSize(1280, 720);
+
+    // Altera o ícone da barra de tarefas
+    GetWindow().SetWindowIcon(&quot;assets/textures/icon.png&quot;);
+}
+</code></pre>
+<h3 id="controle-de-tela-cheia-e-vsync">Controle de Tela Cheia e VSync<a class="headerlink" href="#controle-de-tela-cheia-e-vsync" title="Permanent link">🛈</a></h3>
+<p>A Deoxy facilita a alternância de modos de exibição por meio de funções de toggle (alternância), ideais para mapear em atalhos de teclado dentro do OnUpdate:</p>
+<pre><code class="language-cpp">void OnUpdate(float dt) override {
+    auto input = GetInput();
+
+    // Alterna entre Modo Janela e Fullscreen Exclusivo com F11
+    if (input.WasKeyPressed(Deoxy::KeyCode::F11)) {
+        GetWindow().ToggleFullscreen();
+    }
+
+    // Liga/Desliga o VSync com a tecla V
+    if (input.WasKeyPressed(Deoxy::KeyCode::V)) {
+        GetWindow().ToggleVsync();
+    }
+}
+</code></pre>
+<div class="admonition note">
+<p class="admonition-title">Alternativa</p>
+<p>Para controle direto sem alternância, você também pode usar:</p>
+<ul>
+<li><code>GetWindow().SetWindowMode(Deoxy::Platform::WindowMode::BorderlessFullscreen);</code></li>
+<li><code>GetWindow().SetWindowVsync(false);</code></li>
+</ul>
+</div>
+<h3 id="lendo-propriedades-da-janela">Lendo Propriedades da Janela<a class="headerlink" href="#lendo-propriedades-da-janela" title="Permanent link">🛈</a></h3>
+<p>Se precisar checar o estado atual da janela (por exemplo, para exibir o status na sua interface gráfica), você pode acessar as propriedades internas com <code>GetProperties()</code>:</p>
+<pre><code class="language-cpp">void OnRenderGUI() override {
+    auto&amp; props = GetWindow().GetProperties();
+
+    GetGUI().DrawText(10, 50, 
+        Deoxy::Color(1.0f, 1.0f, 1.0f, 1.0f), 
+        std::format(&quot;Resolução Atual: {}x{}&quot;, props.Width, props.Height)
+    );
+}
+</code></pre>
+<hr />
+<h2 id="recursos-avancados">Recursos Avançados<a class="headerlink" href="#recursos-avancados" title="Permanent link">🛈</a></h2>
+<p>Se você precisar estender a biblioteca ou fazer algo muito específico que dependa diretamente da API do GLFW, a Deoxy fornece acesso direto ao ponteiro nativo da janela através do método <code>GetHandle()</code>:</p>
+<pre><code class="language-cpp">GLFWwindow* glfwWin = GetWindow().GetHandle();
+
+// Agora você tem acesso total às funções nativas do GLFW:
+// glfwSetWindowPos(glfwWin, 100, 100);
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../getting-started/quick-start.html" class="btn btn-neutral float-left" title="Inicio Rápido"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="input.html" class="btn btn-neutral float-right" title="Sistema de Input">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../getting-started/quick-start.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="input.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

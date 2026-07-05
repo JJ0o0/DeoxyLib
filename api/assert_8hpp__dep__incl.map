@@ -1,5 +1,7 @@
 <map id="Deoxy/include/deoxy/logging/assert.hpp" name="Deoxy/include/deoxy/logging/assert.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,164,45"/>
-<area shape="rect" id="Node000002" href="$deoxy_8hpp.html" title=" " alt="" coords="5,93,164,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,59,87,93,82,93,82,59"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="19,5,178,45"/>
+<area shape="rect" id="Node000002" href="$deoxy_8hpp.html" title=" " alt="" coords="19,93,178,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,59,101,93,96,93,96,59"/>
+<area shape="rect" id="Node000003" href="$Deoxy_8hpp.html" title=" " alt="" coords="5,181,192,207"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="101,147,101,181,96,181,96,147"/>
 </map>

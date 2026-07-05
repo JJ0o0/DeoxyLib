@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="pt" >
+<html class="writer-html5" lang="en" >
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Instalação - Deoxy Docs</title>
+    <title>Installation - Deoxy Docs</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Instala\u00e7\u00e3o";
-        var mkdocs_page_input_path = "getting-started/installation.pt.md";
+        var mkdocs_page_name = "Installation";
+        var mkdocs_page_input_path = "getting-started/installation.en.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -46,51 +46,54 @@
                 <li class="toctree-l1"><a class="reference internal" href="../index.html">Home</a>
                 </li>
               </ul>
-              <p class="caption"><span class="caption-text">Começando</span></p>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
               <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Instalação</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Installation</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#pre-requisitos">Pré-requisitos</a>
+    <li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#no-arch-linux-manjaro">No Arch Linux / Manjaro:</a>
+    <li class="toctree-l3"><a class="reference internal" href="#on-arch-linux-manjaro">On Arch Linux / Manjaro:</a>
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#metodo-1-adicionando-como-submodulo-git-recomendado">Método 1: Adicionando como Submódulo Git (Recomendado)</a>
+    <li class="toctree-l2"><a class="reference internal" href="#method-1-adding-as-a-git-submodule-recommended">Method 1: Adding as a Git Submodule (Recommended)</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#configurando-o-seu-cmakeliststxt">Configurando o seu CMakeLists.txt</a>
+    <li class="toctree-l3"><a class="reference internal" href="#configuring-your-cmakeliststxt">Configuring your CMakeLists.txt</a>
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#metodo-2-build-manual-e-instalacao-global">Método 2: Build Manual e Instalação Global</a>
+    <li class="toctree-l2"><a class="reference internal" href="#method-2-consumption-via-sdk-pre-built">Method 2: Consumption via SDK (Pre-built)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#testing">Testing</a>
     </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="quick-start.html">Início Rápido</a>
+                  <li class="toctree-l1"><a class="reference internal" href="quick-start.html">Quick Start</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Recursos e Guias</span></p>
+              <p class="caption"><span class="caption-text">Features and Guides</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../guides/window.html">Sistema de Janela</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../guides/window.html">Window System</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../guides/input.html">Sistema de Input</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../guides/input.html">Input System</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../guides/graphics.html">Renderização e Gráficos</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../guides/graphics.html">Rendering and Graphics</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../guides/gui.html">Interface e GUI</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../guides/gui.html">UI and GUI</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../guides/utilities.html">Utilidades, Logs e Assertions</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../guides/utilities.html">Utilities, Logs and Assertions</a>
                   </li>
               </ul>
+              <p class="caption"><span class="caption-text">More</span></p>
               <ul>
-                <li class="toctree-l1"><a class="" href="/DeoxyLib/api/">Referencia de API</a>
-                </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Idioma</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="" href="/DeoxyLib/">🇧🇷 Português</a>
+                  <li class="toctree-l1"><a class="" href="/DeoxyLib/api/">API Reference</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="/DeoxyLib/en/">🇺🇸 English</a>
+              </ul>
+              <p class="caption"><span class="caption-text">Language</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="/DeoxyLib/">🇺🇸 English</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="/DeoxyLib/pt/">🇧🇷 Português</a>
                   </li>
               </ul>
       </div>
@@ -107,8 +110,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html" class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Começando</li>
-      <li class="breadcrumb-item active">Instalação</li>
+          <li class="breadcrumb-item">Getting Started</li>
+      <li class="breadcrumb-item active">Installation</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -117,67 +120,91 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="guia-de-instalacao">Guia de Instalação<a class="headerlink" href="#guia-de-instalacao" title="Permanent link">🛈</a></h1>
-<p>A <strong>Deoxy</strong> utiliza o <strong>CMake</strong> para gerenciar seu build e suas dependências. Você pode integrá-la ao seu projeto tanto como um submódulo Git quanto clonando e buildando diretamente no seu sistema.</p>
+                <h1 id="installation-guide">Installation Guide<a class="headerlink" href="#installation-guide" title="Permanent link">🛈</a></h1>
+<p><strong>Deoxy</strong> uses <strong>CMake</strong> to manage its build and dependencies. You can integrate it into your project either as a Git submodule or by cloning and building it directly on your system.</p>
 <hr />
-<h2 id="pre-requisitos">Pré-requisitos<a class="headerlink" href="#pre-requisitos" title="Permanent link">🛈</a></h2>
-<p>Antes de começar, certifique-se de ter um compilador com suporte a <strong>C++20</strong> ou superior e as seguintes ferramentas instaladas:</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">🛈</a></h2>
+<p>Before starting, ensure you have a compiler with support for <strong>C++20</strong> or higher and the following tools installed:</p>
 <ul>
 <li><strong>CMake</strong> (v3.20+)</li>
 <li><strong>Git</strong></li>
-<li>Drivers de vídeo com suporte a <strong>OpenGL moderno (3.3+)</strong></li>
+<li>Graphics drivers with support for <strong>modern OpenGL (3.3+)</strong></li>
 </ul>
-<h3 id="no-arch-linux-manjaro">No Arch Linux / Manjaro:<a class="headerlink" href="#no-arch-linux-manjaro" title="Permanent link">🛈</a></h3>
+<h3 id="on-arch-linux-manjaro">On Arch Linux / Manjaro:<a class="headerlink" href="#on-arch-linux-manjaro" title="Permanent link">🛈</a></h3>
 <pre><code class="language-bash">sudo pacman -S cmake git base-devel mesa
 </code></pre>
-<h2 id="metodo-1-adicionando-como-submodulo-git-recomendado">Método 1: Adicionando como Submódulo Git (Recomendado)<a class="headerlink" href="#metodo-1-adicionando-como-submodulo-git-recomendado" title="Permanent link">🛈</a></h2>
-<p>A forma mais rápida de usar a Deoxy no seu jogo é adicionando-a diretamente dentro da pasta do seu projeto.</p>
-<p>No terminal do seu projeto, rode:</p>
+<h2 id="method-1-adding-as-a-git-submodule-recommended">Method 1: Adding as a Git Submodule (Recommended)<a class="headerlink" href="#method-1-adding-as-a-git-submodule-recommended" title="Permanent link">🛈</a></h2>
+<p>The fastest way to use Deoxy in your game is by adding it directly inside your project's folder.</p>
+<p>In your project terminal, run:</p>
 <pre><code class="language-bash">git submodule add https://github.com/JJ0o0/DeoxyLib.git external/DeoxyLib
 git submodule update --init --recursive
 </code></pre>
-<h3 id="configurando-o-seu-cmakeliststxt">Configurando o seu CMakeLists.txt<a class="headerlink" href="#configurando-o-seu-cmakeliststxt" title="Permanent link">🛈</a></h3>
-<p>Depois de adicionar o submódulo, basta chamar a Deoxy e linká-la no seu executável principal. Seu arquivo deve ficar parecido com isto:</p>
-<pre><code class="language-cmake">
-cmake_minimum_required(VERSION 3.20)
-project(MeuJogo LANGUAGES C CXX)
+<h3 id="configuring-your-cmakeliststxt">Configuring your CMakeLists.txt<a class="headerlink" href="#configuring-your-cmakeliststxt" title="Permanent link">🛈</a></h3>
+<p>After adding the submodule, simply call Deoxy and link it to your main executable. Your file should look similar to this:</p>
+<pre><code class="language-cmake">cmake_minimum_required(VERSION 3.20)
+project(MyGame LANGUAGES C CXX)
 
-# Força o uso do C++20
+# Enforce C++20
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# 1. Adiciona a pasta da Deoxy (isso vai configurar o GLFW, Glad, ImGui, etc.)
+# 1. Add the Deoxy folder (this will configure GLFW, Glad, ImGui, etc.)
 add_subdirectory(external/DeoxyLib)
 
-# 2. Define o seu executável
+# 2. Define your executable
 add_executable(${PROJECT_NAME} src/main.cpp)
 
-# 3. Linka a Deoxy ao seu jogo
+# 3. Link Deoxy to your game
 target_link_libraries(${PROJECT_NAME} PRIVATE Deoxy)
 </code></pre>
-<h2 id="metodo-2-build-manual-e-instalacao-global">Método 2: Build Manual e Instalação Global<a class="headerlink" href="#metodo-2-build-manual-e-instalacao-global" title="Permanent link">🛈</a></h2>
-<p>Se você preferir compilar a biblioteca uma vez e instalá-la no seu sistema para usar em múltiplos projetos:</p>
-<pre><code class="language-bash"># Clone o repositório
-git clone --recursive https://github.com/JJ0o0/DeoxyLib.git
-cd DeoxyLib
+<h2 id="method-2-consumption-via-sdk-pre-built">Method 2: Consumption via SDK (Pre-built)<a class="headerlink" href="#method-2-consumption-via-sdk-pre-built" title="Permanent link">🛈</a></h2>
+<p>If you do not want to compile Deoxy's source code every time, you can download the compiled version directly from our <a href="https://github.com/JJ0o0/DeoxyLib/releases">Releases</a> page.</p>
+<ol>
+<li>Download the <code>Deoxy-SDK.zip</code> file from the latest release.</li>
+<li>Unpack it into your project's <code>libs/</code> folder.</li>
+<li>In your <code>CMakeLists.txt</code>, point to the SDK folder:</li>
+</ol>
+<pre><code class="language-cmake"># Add the path where you placed the unpacked folder.
+list(APPEND CMAKE_PREFIX_PATH &quot;${CMAKE_SOURCE_DIR}/libs/Deoxy&quot;)
 
-# Gere os arquivos de build e compile
-cmake -B build -DCMAKE_BUILD_TYPE=Release
-cmake --build build --config Release
+find_package(Deoxy REQUIRED)
 
-# Instale no sistema (opcional)
-sudo cmake --install build
+add_executable(MyGame src/main.cpp)
+target_link_libraries(MyGame PRIVATE Deoxy::Deoxy)
 </code></pre>
-<p>Depois, no CMakeLists.txt de qualquer jogo seu, basta usar:</p>
-<pre><code class="language-cmake">find_package(Deoxy REQUIRED)
-target_link_libraries(MeuJogo PRIVATE Deoxy::Deoxy)
+<hr />
+<h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">🛈</a></h2>
+<p>To test if everything is working correctly, copy and paste this example code:</p>
+<pre><code class="language-cpp">#include &lt;Deoxy.hpp&gt;
+
+class Game : public Deoxy::Application {
+    protected:
+        void OnStart() override {}
+
+        void OnUpdate(float dt) override {
+            auto input = GetInput();
+
+            if (input.WasKeyPressed(Deoxy::KeyCode::Escape)) Quit();
+        }
+
+        void OnRender() override {}
+
+        void OnRenderGUI() override {}
+
+        void OnQuit() override {}
+};
+
+int main() {
+    Game game;
+    return game.Run();
+}
 </code></pre>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../index.html" class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="quick-start.html" class="btn btn-neutral float-right" title="Início Rápido">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="quick-start.html" class="btn btn-neutral float-right" title="Quick Start">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>

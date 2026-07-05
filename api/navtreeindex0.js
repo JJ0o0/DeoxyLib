@@ -1,5 +1,7 @@
 var NAVTREEINDEX0 =
 {
+"Deoxy_8hpp.html":[3,0,0,0,1],
+"Deoxy_8hpp_source.html":[3,0,0,0,1],
 "annotated.html":[2,0],
 "application_8cpp.html":[3,0,0,1,0,5],
 "application_8cpp_source.html":[3,0,0,1,0,5],
@@ -111,7 +113,6 @@ var NAVTREEINDEX0 =
 "color_8hpp.html#a6d141b4e5c34a587f5ee91085c6faffc":[3,0,0,0,0,5,0,3],
 "color_8hpp_source.html":[3,0,0,0,0,5,0],
 "deoxy_8hpp.html":[3,0,0,0,0,7],
-"deoxy_8hpp.html#a834dbe5f20e7e34e32f141fd470c24a9":[3,0,0,0,0,7,0],
 "deoxy_8hpp_source.html":[3,0,0,0,0,7],
 "dir_258c3dd0a0ff6ed4a83ccaf803860591.html":[3,0,0,0,0,2],
 "dir_3b91172935ac10fbc529d1283ad12859.html":[3,0,0,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "group__Platform.html#ggae34d25e5349c3c4e6099499a5a92e921ac1999bb36fd75c30832ec398d5b249ea":[0,3,2,1],
 "gui__handler_8cpp.html":[3,0,0,1,0,1,0],
 "gui__handler_8cpp_source.html":[3,0,0,1,0,1,0],
-"gui__handler_8hpp.html":[3,0,0,0,0,1,0],
-"gui__handler_8hpp_source.html":[3,0,0,0,0,1,0]
+"gui__handler_8hpp.html":[3,0,0,0,0,1,0]
 };

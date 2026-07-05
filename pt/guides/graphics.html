@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Renderização e Gráficos - Deoxy Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Renderiza\u00e7\u00e3o e Gr\u00e1ficos";
+        var mkdocs_page_input_path = "guides/graphics.pt.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/cpp.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/c.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../index.html" class="icon icon-home"> Deoxy Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../index.html">Inicio</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Começando</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../getting-started/installation.html">Instalação</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../getting-started/quick-start.html">Inicio Rápido</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Recursos e Guias</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="window.html">Sistema de Janela</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="input.html">Sistema de Input</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Renderização e Gráficos</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#trabalhando-com-cores-deoxycolor">Trabalhando com Cores (Deoxy::Color)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#exemplos-de-criacao-e-uso">Exemplos de Criação e Uso:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#funcoes-helper-de-conversao">Funções Helper de Conversão</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#exemplos-de-uso">Exemplos de Uso:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#o-renderizador">O Renderizador</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#alterando-a-cor-de-fundo-clear-color">Alterando a cor de fundo (Clear Color)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lendo-a-cor-atual">Lendo a cor atual</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#redimensionamento-da-tela">Redimensionamento da Tela</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#o-que-vem-por-ai">O que vem por aí?</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="gui.html">Interface e GUI</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="utilities.html">Utilidades, Logs e Assertions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Mais</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="/DeoxyLib/api/">Referência da API</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Idioma</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="/DeoxyLib/">🇺🇸 English</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="/DeoxyLib/pt/">🇧🇷 Português</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Deoxy Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html" class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Recursos e Guias</li>
+      <li class="breadcrumb-item active">Renderização e Gráficos</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="renderizacao-e-graficos">Renderização e Gráficos<a class="headerlink" href="#renderizacao-e-graficos" title="Permanent link">🛈</a></h1>
+<p>O módulo de gráficos da Deoxy abstrai o contexto do OpenGL moderno por meio da classe <code>Deoxy::Graphics::Renderer</code>. Ele gerencia o estado da viewport, a inicialização dos drivers lógicos e as operações básicas de limpeza de tela.</p>
+<hr />
+<h2 id="trabalhando-com-cores-deoxycolor">Trabalhando com Cores (<code>Deoxy::Color</code>)<a class="headerlink" href="#trabalhando-com-cores-deoxycolor" title="Permanent link">🛈</a></h2>
+<p>Para gerenciar cores, a Deoxy utiliza aliases integrados diretamente com a biblioteca matemática <strong>GLM</strong>. Isso significa que você pode realizar operações de vetores e manipulações diretamente nas estruturas de cor.</p>
+<p>A biblioteca fornece dois formatos principais:</p>
+<ul>
+<li><strong><code>Deoxy::Color</code></strong> (<code>glm::vec4</code>): Armazena os canais RGBA em ponto flutuante normalizado, onde cada componente varia de <code>0.0f</code> a <code>1.0f</code>.</li>
+<li><strong><code>Deoxy::Color32</code></strong> (<code>glm::u8vec4</code>): Armazena os canais RGBA em inteiros de 8 bits, variando de <code>0</code> a <code>255</code>.</li>
+</ul>
+<h3 id="exemplos-de-criacao-e-uso">Exemplos de Criação e Uso:<a class="headerlink" href="#exemplos-de-criacao-e-uso" title="Permanent link">🛈</a></h3>
+<pre><code class="language-cpp">// Criando uma cor normalizada (RGBA de 0.0f a 1.0f)
+Deoxy::Color fundo = Deoxy::Color(0.1f, 0.1f, 0.13f, 1.0f);
+
+// Criando uma cor de 8 bits (RGBA de 0 a 255)
+Deoxy::Color32 verdeGamer = Deoxy::Color32(0, 255, 0, 255);
+</code></pre>
+<h2 id="funcoes-helper-de-conversao">Funções Helper de Conversão<a class="headerlink" href="#funcoes-helper-de-conversao" title="Permanent link">🛈</a></h2>
+<p>Se você precisar converter formatos de cor para interagir com diferentes partes da engine (como mandar para o renderizador ou tratar paletas de sprites), a Deoxy fornece duas funções inline globais:</p>
+<ul>
+<li><code>Deoxy::ToNormalizedColor(const Color32&amp; color32)</code>: Converte de 0-255 para 0.0f-1.0f.</li>
+<li><code>Deoxy::ToColor32(const Color&amp; color)</code>: Converte de 0.0f-1.0f para 0-255 (arredondando os valores corretamente).</li>
+</ul>
+<h3 id="exemplos-de-uso">Exemplos de Uso:<a class="headerlink" href="#exemplos-de-uso" title="Permanent link">🛈</a></h3>
+<pre><code class="language-cpp">Deoxy::Color32 corInterface = Deoxy::Color32(255, 128, 0, 255);
+
+// Convertendo para o formato aceito pelo Renderer
+GetRenderer().SetClearColor(Deoxy::ToNormalizedColor(corInterface));
+</code></pre>
+<hr />
+<h2 id="o-renderizador">O Renderizador<a class="headerlink" href="#o-renderizador" title="Permanent link">🛈</a></h2>
+<p>Dentro da sua aplicação, você pode acessar a interface gráfica chamando o método <code>GetRenderer()</code>.</p>
+<p>Por padrão, a Deoxy inicializa a tela com um tom escuro sutil (<code>0.1f, 0.1f, 0.13f, 1.0f</code>). Você pode alterar e ler essa cor a qualquer momento.</p>
+<h3 id="alterando-a-cor-de-fundo-clear-color">Alterando a cor de fundo (Clear Color)<a class="headerlink" href="#alterando-a-cor-de-fundo-clear-color" title="Permanent link">🛈</a></h3>
+<p>Você pode definir uma nova cor padrão, geralmente na inicialização do jogo (<code>OnStart</code>):</p>
+<pre><code class="language-cpp">void OnStart() override {
+    // Altera o fundo padrão para uma cor personalizada
+    Deoxy::Color minhaCor = Deoxy::Color(0.2f, 0.3f, 0.3f, 1.0f);
+    GetRenderer().SetClearColor(minhaCor);
+}
+</code></pre>
+<h3 id="lendo-a-cor-atual">Lendo a cor atual<a class="headerlink" href="#lendo-a-cor-atual" title="Permanent link">🛈</a></h3>
+<p>Se precisar ler ou armazenar a cor configurada no momento:</p>
+<pre><code class="language-cpp">Deoxy::Color corAtual = GetRenderer().GetClearColor();
+</code></pre>
+<hr />
+<h2 id="redimensionamento-da-tela">Redimensionamento da Tela<a class="headerlink" href="#redimensionamento-da-tela" title="Permanent link">🛈</a></h2>
+<p>A engine lida com a mudança de tamanho da janela automaticamente debaixo dos panos, invocando o método <code>OnResize(width, height)</code> para reconfigurar a viewport do OpenGL sempre que o usuário arrasta as bordas da janela ou alterna o modo de exibição.</p>
+<hr />
+<h2 id="o-que-vem-por-ai">O que vem por aí?<a class="headerlink" href="#o-que-vem-por-ai" title="Permanent link">🛈</a></h2>
+<p>Atualmente, o <code>Renderer</code> gerencia o ciclo básico de desenho. Nos próximos updates da biblioteca, esta seção cobrirá o desenho automatizado de primitivos geométricos e o carregamento de Shaders customizados.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="input.html" class="btn btn-neutral float-left" title="Sistema de Input"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="gui.html" class="btn btn-neutral float-right" title="Interface e GUI">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="input.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="gui.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
