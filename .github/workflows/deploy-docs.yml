@@ -22,15 +22,20 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y doxygen graphviz
 
+      - name: Baixar Doxygen Awesome CSS
+        run: |
+          mkdir -p Vendor
+          git clone https://github.com/jhasse/doxygen-awesome-css.git Vendor/doxygen-awesome-css
+
       - name: Configure python
-        uses: actions/tools/python@v5
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
       - name: Install mkdocs dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install mkdocs mkdocs-readthedocs-theme mkdocs-static-i18n
+          pip install mkdocs mkdocs-static-i18n
 
       - name: Generate API Reference (Doxygen)
         run: |
