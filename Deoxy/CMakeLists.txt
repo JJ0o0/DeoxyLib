@@ -24,6 +24,8 @@ target_include_directories(Deoxy
     PUBLIC
         src/
         include/
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+        $<INSTALL_INTERFACE:include>
     PRIVATE
         ${CMAKE_SOURCE_DIR}/Vendor/glad/include/
         ${CMAKE_SOURCE_DIR}/Vendor/stb/include/

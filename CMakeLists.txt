@@ -10,7 +10,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-add_subdirectory(Vendor)
+option(DEOXY_BUILD_SANDBOX "Build Sandbox Project" ON)
 
+add_subdirectory(Vendor)
 add_subdirectory(Deoxy)
-add_subdirectory(Sandbox)
+
+if(DEOXY_BUILD_SANDBOX)
+    add_subdirectory(Sandbox)
+endif()

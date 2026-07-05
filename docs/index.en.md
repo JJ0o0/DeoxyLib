@@ -1,5 +1,10 @@
 # Deoxy Docs - v0.1
 
+<div align="center">
+  <img src="../assets/images/deoxy_logo.png" alt="Logo da Deoxy" width="200">
+</div>
+<br>
+
 [Deoxy](https://github.com/JJ0o0/DeoxyLib) is a C++ library made for creating applications and games.
 
 It provides simple abstractions for windowing, rendering, input, math utilities, among others.

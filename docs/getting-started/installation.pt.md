@@ -49,25 +49,52 @@ add_executable(${PROJECT_NAME} src/main.cpp)
 target_link_libraries(${PROJECT_NAME} PRIVATE Deoxy)
 ```
 
-## Método 2: Build Manual e Instalação Global
+## Método 2: Consumo via SDK (Pre-built)
 
-Se você preferir compilar a biblioteca uma vez e instalá-la no seu sistema para usar em múltiplos projetos:
+Se você não quer compilar o código-fonte da Deoxy toda vez, você pode baixar a versão compilada diretamente da nossa página de [Releases](https://github.com/JJ0o0/DeoxyLib/releases).
 
-```bash
-# Clone o repositório
-git clone --recursive https://github.com/JJ0o0/DeoxyLib.git
-cd DeoxyLib
+1. Baixe o arquivo `Deoxy-SDK.zip` da última release.
+2. Descompacte na pasta `libs/` do seu projeto.
+3. No seu `CMakeLists.txt`, aponte para a pasta da SDK:
 
-# Gere os arquivos de build e compile
-cmake -B build -DCMAKE_BUILD_TYPE=Release
-cmake --build build --config Release
+```cmake
+# Adicione o caminho onde você colocou a pasta descompactada.
+list(APPEND CMAKE_PREFIX_PATH "${CMAKE_SOURCE_DIR}/libs/Deoxy")
 
-# Instale no sistema (opcional)
-sudo cmake --install build
+find_package(Deoxy REQUIRED)
+
+add_executable(MeuJogo src/main.cpp)
+target_link_libraries(MeuJogo PRIVATE Deoxy::Deoxy)
 ```
 
-Depois, no CMakeLists.txt de qualquer jogo seu, basta usar:
-```cmake
-find_package(Deoxy REQUIRED)
-target_link_libraries(MeuJogo PRIVATE Deoxy::Deoxy)
+---
+
+## Testando
+
+Para testar se está tudo funcionando corretamente, copie e cole esse código de exemplo:
+
+```cpp
+#include <Deoxy.hpp>
+
+class Game : public Deoxy::Application {
+    protected:
+        void OnStart() override {}
+
+        void OnUpdate(float dt) override {
+            auto input = GetInput();
+
+            if (input.WasKeyPressed(Deoxy::KeyCode::Escape)) Quit();
+        }
+
+        void OnRender() override {}
+
+        void OnRenderGUI() override {}
+
+        void OnQuit() override {}
+};
+
+int main() {
+    Game game;
+    return game.Run();
+}
 ```

@@ -1,4 +1,8 @@
 # Deoxy Docs - v0.1
+<div align="center">
+  <img src="../assets/images/deoxy_logo.png" alt="Logo da Deoxy" width="200">
+</div>
+<br>
 
 [Deoxy](https://github.com/JJ0o0/DeoxyLib) é uma biblioteca C++ feita para a criação de aplicativos e jogos.
 
@@ -73,6 +77,7 @@ int main() {
     return game.Run();
 }
 ```
+
 ---
 
 ## Próximos Passos

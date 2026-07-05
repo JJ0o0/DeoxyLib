@@ -1,4 +1,4 @@
-#include <deoxy/deoxy.hpp>
+#include <Deoxy.hpp>
 
 class Game : public Deoxy::Application {
     protected:

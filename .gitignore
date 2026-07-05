@@ -2,6 +2,8 @@
 build/
 cmake-build-*/
 .venv/
+dist/
+temp_merge/
 
 # Cache
 .cache/
