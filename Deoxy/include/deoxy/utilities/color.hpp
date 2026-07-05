@@ -1,7 +1,6 @@
 #pragma once
 
-#include "deoxy/utilities/math.hpp"
-#include <glm/glm.hpp>
+#include "math.hpp"
 
 namespace Deoxy {
     /**

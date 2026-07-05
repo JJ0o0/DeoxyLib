@@ -20,42 +20,44 @@ plugins:
   - search
   - i18n:
       languages:
-        - locale: pt
-          name: Portugues
-          default: true
-          build: true
         - locale: en
           name: English
           build: true
+          default: true
+        - locale: pt
+          name: Portugues
+          build: true
           nav_translations:
-            Home: Home
-            Começando: Getting Started
-            Instalação: Installation
-            Início Rápido: Quick Start
-            Recursos e Guias: Features and Guides
-            Sistema de Janela: Window System
-            Sistema de Input: Input System
-            Renderização e Gráficos: Rendering and Graphics
-            Interface e GUI: UI and GUI
-            Utilidades, Logs e Assertions: Utilities, Logs and Assertions
-            Referencia de API: API Reference
-            Idioma: Language
+            Home: Inicio
+            Getting Started: Começando
+            Installation: Instalação
+            Quick Start: Inicio Rápido
+            Features and Guides: Recursos e Guias
+            Window System: Sistema de Janela
+            Input System: Sistema de Input
+            Rendering and Graphics: Renderização e Gráficos
+            UI and GUI: Interface e GUI
+            Utilities, Logs and Assertions: Utilidades, Logs e Assertions
+            More: Mais
+            API Reference: Referência da API
+            Language: Idioma
 
 nav:
   - Home: index.md
-  - Começando:
-      - Instalação: getting-started/installation.md
-      - Início Rápido: getting-started/quick-start.md
-  - Recursos e Guias:
-      - Sistema de Janela: guides/window.md
-      - Sistema de Input: guides/input.md
-      - Renderização e Gráficos: guides/graphics.md
-      - Interface e GUI: guides/gui.md
-      - Utilidades, Logs e Assertions: guides/utilities.md
-  - Referencia de API: /DeoxyGL/api/index.html
-  - Idioma:
-      - 🇧🇷 Português Brasil: /index.html
-      - 🇺🇸 English: /en/index.html
+  - Getting Started:
+      - Installation: getting-started/installation.md
+      - Quick Start: getting-started/quick-start.md
+  - Features and Guides:
+      - Window System: guides/window.md
+      - Input System: guides/input.md
+      - Rendering and Graphics: guides/graphics.md
+      - UI and GUI: guides/gui.md
+      - Utilities, Logs and Assertions: guides/utilities.md
+  - More:
+    - API Reference: /DeoxyLib/api/
+  - Language:
+      - 🇺🇸 English: /DeoxyLib/
+      - 🇧🇷 Português: /DeoxyLib/pt/
 
 markdown_extensions:
   - admonition
