@@ -25,7 +25,7 @@ jobs:
       - name: Baixar Doxygen Awesome CSS
         run: |
           mkdir -p Vendor
-          git clone https://github.com/jhasse/doxygen-awesome-css.git Vendor/doxygen-awesome-css
+          git clone https://github.com/jothepro/doxygen-awesome-css.git Vendor/doxygen-awesome-css
 
       - name: Configure python
         uses: actions/setup-python@v5
