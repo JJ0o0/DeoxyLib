@@ -16,7 +16,9 @@ class Game : public Deoxy::Application {
             if (input.WasKeyPressed(Deoxy::KeyCode::V)) GetWindow().ToggleVsync();
         }
 
-        void OnRender() override {}
+        void OnRender() override {
+            GetRenderer().Draw();
+        }
 
         void OnRenderGUI() override {
             GetGUI().DrawText(

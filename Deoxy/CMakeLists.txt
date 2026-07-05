@@ -7,6 +7,10 @@ target_sources(Deoxy
 
         src/deoxy/graphics/renderer_context.cpp
         src/deoxy/graphics/renderer.cpp
+        src/deoxy/graphics/opengl/gl_shader.cpp
+        src/deoxy/graphics/opengl/gl_vertex_buffer.cpp
+        src/deoxy/graphics/opengl/gl_index_buffer.cpp
+        src/deoxy/graphics/opengl/gl_vertex_array.cpp
 
         src/deoxy/logging/logger.cpp
 

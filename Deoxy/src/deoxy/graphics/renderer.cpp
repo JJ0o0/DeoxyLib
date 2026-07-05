@@ -22,6 +22,10 @@ namespace Deoxy::Graphics {
     void Renderer::Clear() {
         m_context->Clear(m_clearColor);
     }
+
+    void Renderer::Draw() {
+        m_context->Draw();
+    }
     
     void Renderer::SetClearColor(const Color& color) {
         m_clearColor = color;

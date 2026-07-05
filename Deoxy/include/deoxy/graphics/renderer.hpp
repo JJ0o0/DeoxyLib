@@ -51,6 +51,8 @@ namespace Deoxy::Graphics {
              */
             void Clear();
 
+            void Draw();
+
             /**
              * @brief Sets the renderer clear color.
              *
