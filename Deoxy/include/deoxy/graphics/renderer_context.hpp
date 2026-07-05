@@ -1,7 +1,7 @@
 #pragma once
 
 #include "../utilities/color.hpp"
-#include "mesh.hpp"
+#include "../scene.hpp"
 #include "opengl/gl_shader.hpp"
 #include <cstdint>
 #include <memory>
@@ -33,7 +33,7 @@ namespace Deoxy::Graphics {
              */
             void Clear(const Color& color);
 
-            void DrawMesh(Mesh& mesh);
+            void DrawScene(Scene& scene);
 
             /**
              * @brief Notifies the renderer that the viewport size has changed.

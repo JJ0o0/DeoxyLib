@@ -1,6 +1,7 @@
 #pragma once
 
 #include "application.hpp" // IWYU pragma: export
+#include "scene.hpp" // IWYU pragma: export
 #include "platform/window.hpp" // IWYU pragma: export
 #include "graphics/renderer.hpp" // IWYU pragma: export
 #include "graphics/mesh_primitives.hpp" // IWYU pragma: export

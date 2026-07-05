@@ -12,12 +12,10 @@ namespace Deoxy::Graphics {
         m_vao->Unbind();
     }
 
-    void Mesh::Draw(const OpenGL::GLShader& shader) {
-        shader.Bind();
+    void Mesh::Draw() const {
         m_vao->Bind();
         glDrawElements(GL_TRIANGLES, m_ebo->GetIndexCount(), GL_UNSIGNED_INT, 0);
         m_vao->Unbind();
-        shader.Unbind();
     }
 
     void Mesh::Destroy() {

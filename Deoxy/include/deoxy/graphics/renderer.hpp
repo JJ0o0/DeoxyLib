@@ -1,7 +1,7 @@
 #pragma once
 
 #include "../utilities/color.hpp"
-#include "mesh.hpp"
+#include "../scene.hpp"
 #include <memory>
 
 namespace Deoxy::Graphics {
@@ -52,7 +52,7 @@ namespace Deoxy::Graphics {
              */
             void Clear();
 
-            void DrawMesh(Mesh& mesh);
+            void DrawScene(Scene& scene);
 
             /**
              * @brief Sets the renderer clear color.

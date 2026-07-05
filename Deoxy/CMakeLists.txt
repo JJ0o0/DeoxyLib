@@ -4,6 +4,8 @@ target_sources(Deoxy
     PRIVATE
         src/deoxy/application.cpp
         src/deoxy/time.cpp
+        src/deoxy/scene.cpp
+        src/deoxy/game_object.cpp
 
         src/deoxy/graphics/renderer_context.cpp
         src/deoxy/graphics/renderer.cpp

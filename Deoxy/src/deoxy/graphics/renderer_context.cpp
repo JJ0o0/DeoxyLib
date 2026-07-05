@@ -41,8 +41,10 @@ namespace Deoxy::Graphics {
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     }
 
-    void RendererContext::DrawMesh(Mesh& mesh) {
-        mesh.Draw(*m_shader);
+    void RendererContext::DrawScene(Scene& scene) {
+        for (auto& obj : scene.GetGameObjects()) {
+            obj->Draw();
+        }
     }
 
     void RendererContext::OnResize(uint32_t width, uint32_t height) {

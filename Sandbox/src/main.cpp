@@ -1,4 +1,3 @@
-#include "deoxy/graphics/mesh_primitives.hpp"
 #include <Deoxy.hpp>
 
 class Game : public Deoxy::Application {
@@ -7,18 +6,20 @@ class Game : public Deoxy::Application {
             GetWindow().SetWindowIcon("assets/icon.png");
             GetGUISettings().SetTheme(Deoxy::GUITheme::Rest);
 
-            m_clearColor = GetRenderer().GetClearColor();
+            auto& obj = m_scene.CreateGameObject("Quad");
+            obj.SetMesh(Deoxy::Graphics::CreateTriangle());
+            obj.SetShader("assets/shaders/default.vert", "assets/shaders/default.frag");
         }
 
         void OnUpdate(float dt) override {
             auto input = GetInput();
 
-            if (input.WasKeyPressed(Deoxy::KeyCode::Escape)) m_showSettings = !m_showSettings;
+            if (input.WasKeyPressed(Deoxy::KeyCode::Escape)) Quit();
             if (input.WasKeyPressed(Deoxy::KeyCode::V)) GetWindow().ToggleVsync();
         }
 
         void OnRender() override {
-            GetRenderer().DrawMesh(*Deoxy::Graphics::CreateTriangle());
+            GetRenderer().DrawScene(m_scene);
         }
 
         void OnRenderGUI() override {
@@ -33,30 +34,12 @@ class Game : public Deoxy::Application {
                 Deoxy::Color(1.0f, 1.0f, 1.0f, 1.0f), 
                 std::format("Vsync: {:s}", GetWindow().GetProperties().VSync ? "On" : "Off")
             );
-
-            if (m_showSettings) {
-                GetGUI().SetNextWindowCentered({120, 120});
-                ImGui::Begin("Settings", nullptr, 
-                    ImGuiWindowFlags_NoMove |
-                    ImGuiWindowFlags_NoResize |
-                    ImGuiWindowFlags_NoCollapse
-                );
-
-                if (ImGui::ColorEdit4("Clear Color", Deoxy::Math::GetPointer(m_clearColor), ImGuiColorEditFlags_NoAlpha)) {
-                    GetRenderer().SetClearColor(m_clearColor);
-                }
-
-                if (ImGui::Button("Close Settings")) m_showSettings = false;
-
-                if (ImGui::Button("Quit Game")) Quit();
-                
-                ImGui::End();
-            }
         }
 
         void OnQuit() override {}
     private:
-        Deoxy::Color m_clearColor;
+        Deoxy::Scene m_scene;
+
         bool m_showSettings = false;
 };
 

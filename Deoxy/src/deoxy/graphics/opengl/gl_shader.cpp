@@ -1,10 +1,9 @@
-#include "deoxy/utilities/color.hpp"
-#include <cstdint>
 #include <deoxy/graphics/opengl/gl_shader.hpp>
 #include <deoxy/utilities/math.hpp>
 #include <deoxy/utilities/file.hpp>
 #include <deoxy/logging/enginelog.hpp>
 #include <glad/gl.h>
+#include <cstdint>
 
 namespace Deoxy::Graphics::OpenGL {
     GLenum GLShader::ShaderTypeToGLenum(ShaderType type) {
