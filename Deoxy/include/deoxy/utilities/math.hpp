@@ -61,4 +61,9 @@ namespace Deoxy::Math {
     inline float* GetPointer(T& value) {
         return glm::value_ptr(value);
     }
+
+    template<typename T>
+    inline const float* GetPointer(const T& value) {
+        return glm::value_ptr(value);
+    }
 }

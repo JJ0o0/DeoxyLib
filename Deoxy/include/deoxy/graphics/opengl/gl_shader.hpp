@@ -16,6 +16,9 @@ namespace Deoxy::Graphics::OpenGL {
 
             void Bind() const;
             void Unbind() const;
+
+            template<typename T>
+            void SetUniform(const std::string& name, const T& value);
         private:
             uint32_t m_id = 0;
 
@@ -24,5 +27,6 @@ namespace Deoxy::Graphics::OpenGL {
             uint32_t createProgram(uint32_t vertex, uint32_t fragment);
             bool validateShader(uint32_t shader, ShaderType type);
             bool validateProgram(uint32_t program);
+            int getUniformLocation(const std::string& name);
     };
 }

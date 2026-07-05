@@ -1,5 +1,7 @@
+#include "deoxy/utilities/color.hpp"
 #include <cstdint>
 #include <deoxy/graphics/opengl/gl_shader.hpp>
+#include <deoxy/utilities/math.hpp>
 #include <deoxy/utilities/file.hpp>
 #include <deoxy/logging/enginelog.hpp>
 #include <glad/gl.h>
@@ -30,6 +32,31 @@ namespace Deoxy::Graphics::OpenGL {
 
     void GLShader::Bind() const { glUseProgram(m_id); }
     void GLShader::Unbind() const { glUseProgram(0); }
+
+    template<>
+    void GLShader::SetUniform(const std::string& name, const int& value) {
+        glUniform1i(getUniformLocation(name), value);
+    }
+
+    template<>
+    void GLShader::SetUniform(const std::string& name, const float& value) {
+        glUniform1f(getUniformLocation(name), value);
+    }
+
+    template<>
+    void GLShader::SetUniform(const std::string& name, const Math::Vector3& value) {
+        glUniform3fv(getUniformLocation(name), 1, Math::GetPointer(value));
+    }
+
+    template<>
+    void GLShader::SetUniform(const std::string& name, const Math::Vector4& value) {
+        glUniform4fv(getUniformLocation(name), 1, Math::GetPointer(value));
+    }
+
+    template<>
+    void GLShader::SetUniform(const std::string& name, const Math::Matrix4x4& value) {
+        glUniformMatrix4fv(getUniformLocation(name), 1, GL_FALSE, Math::GetPointer(value));
+    }
 
     uint32_t GLShader::createShader(const std::string& path, ShaderType type) {
         std::string read = Utilities::ReadFileAsString(path);
@@ -106,5 +133,15 @@ namespace Deoxy::Graphics::OpenGL {
         }
 
         return success;
+    }
+
+    int GLShader::getUniformLocation(const std::string& name) {
+        int location = glGetUniformLocation(m_id, name.c_str());
+
+        if (location == -1) {
+            DEOXY_ERROR("Couldn't get uniform location for \"{}\"!", name);
+        }
+
+        return location;
     }
 }

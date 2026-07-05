@@ -11,6 +11,8 @@ namespace Deoxy {
      */
     using Color = glm::vec4;
 
+    using ColorRGB = glm::vec3;
+
     /**
      * @ingroup Utilities
      * @brief RGBA color using 8-bit integer components.
@@ -32,6 +34,14 @@ namespace Deoxy {
             color32.g / 255.0f,
             color32.b / 255.0f,
             color32.a / 255.0f
+        };
+    };
+
+    inline ColorRGB ToNormalizedColorRGB(const Color& color) {
+        return ColorRGB{
+            color.r,
+            color.g,
+            color.b
         };
     };
 
