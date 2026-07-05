@@ -1,10 +1,8 @@
 #pragma once
 
 #include "../utilities/color.hpp"
+#include "mesh.hpp"
 #include "opengl/gl_shader.hpp"
-#include "opengl/gl_vertex_buffer.hpp"
-#include "opengl/gl_index_buffer.hpp"
-#include "opengl/gl_vertex_array.hpp"
 #include <cstdint>
 #include <memory>
 
@@ -35,7 +33,7 @@ namespace Deoxy::Graphics {
              */
             void Clear(const Color& color);
 
-            void Draw();
+            void DrawMesh(Mesh& mesh);
 
             /**
              * @brief Notifies the renderer that the viewport size has changed.
@@ -45,9 +43,6 @@ namespace Deoxy::Graphics {
              */
             void OnResize(uint32_t width, uint32_t height);
         private:
-            std::unique_ptr<OpenGL::GLShader> m_shader = nullptr;
-            std::unique_ptr<OpenGL::GLVertexBuffer> m_vbo = nullptr;
-            std::unique_ptr<OpenGL::GLIndexBuffer> m_ebo = nullptr;
-            std::unique_ptr<OpenGL::GLVertexArray> m_vao = nullptr;
+            std::unique_ptr<OpenGL::GLShader> m_shader;
     };
 }

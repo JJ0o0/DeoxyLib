@@ -1,3 +1,4 @@
+#include "deoxy/graphics/mesh.hpp"
 #include <deoxy/graphics/renderer_context.hpp>
 #include <deoxy/logging/enginelog.hpp>
 #include <glad/gl.h>
@@ -29,19 +30,9 @@ namespace Deoxy::Graphics {
         };
 
         m_shader = std::make_unique<OpenGL::GLShader>("assets/shaders/default.vert", "assets/shaders/default.frag");
-        m_vao = std::make_unique<OpenGL::GLVertexArray>();
-        m_vbo = std::make_unique<OpenGL::GLVertexBuffer>(vertices);
-        m_ebo = std::make_unique<OpenGL::GLIndexBuffer>(indices);
-
-        m_vao->AddVertexBuffer(*m_vbo);
-        m_vao->AddIndexBuffer(*m_ebo);
-        m_vao->Unbind();
     }
 
     void RendererContext::Destroy() {
-        m_ebo.reset();
-        m_vbo.reset();
-        m_vao.reset();
         m_shader.reset();
     }
 
@@ -50,12 +41,8 @@ namespace Deoxy::Graphics {
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     }
 
-    void RendererContext::Draw() {
-        m_shader->Bind();
-        m_vao->Bind();
-        glDrawElements(GL_TRIANGLES, m_ebo->GetIndexCount(), GL_UNSIGNED_INT, 0);
-        m_vao->Unbind();
-        m_shader->Unbind();
+    void RendererContext::DrawMesh(Mesh& mesh) {
+        mesh.Draw(*m_shader);
     }
 
     void RendererContext::OnResize(uint32_t width, uint32_t height) {

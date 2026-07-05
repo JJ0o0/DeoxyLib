@@ -23,8 +23,8 @@ namespace Deoxy::Graphics {
         m_context->Clear(m_clearColor);
     }
 
-    void Renderer::Draw() {
-        m_context->Draw();
+    void Renderer::DrawMesh(Mesh& mesh) {
+        m_context->DrawMesh(mesh);
     }
     
     void Renderer::SetClearColor(const Color& color) {

@@ -1,3 +1,4 @@
+#include "deoxy/graphics/mesh_primitives.hpp"
 #include <Deoxy.hpp>
 
 class Game : public Deoxy::Application {
@@ -17,7 +18,7 @@ class Game : public Deoxy::Application {
         }
 
         void OnRender() override {
-            GetRenderer().Draw();
+            GetRenderer().DrawMesh(*Deoxy::Graphics::CreateTriangle());
         }
 
         void OnRenderGUI() override {
